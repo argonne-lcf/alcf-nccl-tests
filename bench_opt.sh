@@ -4,11 +4,12 @@
 #PBS -l nodes=2:ppn=4
 #PBS -l filesystems=home:tegu
 module restore
-source ./setup.sh
 cd $PBS_O_WORKDIR
+source ./setup.sh
 export PBS_JOBSIZE=$(cat $PBS_NODEFILE | uniq | sed -n $=)
 export DATE_TAG=$(date +"%Y-%m-%d-%H-%M-%S")
-OUTPUT=results_ss11/n$PBS_JOBSIZE.g4/$DATE_TAG/
+read system b <<<$(echo $PBS_O_HOST | tr - "\n")
+OUTPUT=results_${system}/n$PBS_JOBSIZE.g4/$DATE_TAG/
 mkdir -p $OUTPUT/
 
 env >& $OUTPUT/env.dat.1
