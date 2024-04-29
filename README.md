@@ -20,6 +20,14 @@ export NCCL_NET="AWS Libfabric"
 export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
 ```
 
+Note that this will requires the AWS plugin, which can be built on Polaris
+```bash 
+git clone v1.9.1-aws https://github.com/aws/aws-ofi-nccl.git
+cd aws-ofi-nccl
+./configure --prefix=/home/hzheng/PolarisAT/soft/aws-ofi-nccl --with-libfabric=/opt/cray/libfabric/1.15.2.0/ --with-cuda=/soft/compilers/cudatoolkit/cuda\
+-12.4.1 --with-hwloc=/home/hzheng/PolarisAT/pyenvs/hwloc/
+```
+
 (4) the following setup is to see how FI environment variables help
 ```bash
 export NCCL_NET_GDR_LEVEL=PHB
