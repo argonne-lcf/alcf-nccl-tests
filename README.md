@@ -2,7 +2,7 @@
 
 This is for performing NCCL tests with different environment variables. 
 
-(1) Default settting, no NCCL environement setup
+(1) Default settting, no NCCL environement setup. This will use TCP, resulting very bad performance. 
 
 (2) with following setup
 ```bash 
@@ -12,7 +12,7 @@ export NCCL_COLLNET_ENABLE=1
 ```
 
 (3) the following setup is to see how aws libfabric plugin helps
-```
+```bash
 export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
@@ -21,7 +21,7 @@ export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH
 ```
 
 (4) the following setup is to see how FI environment variables help
-```
+```bash
 export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
@@ -33,7 +33,7 @@ export FI_CXI_DEFAULT_CQ_SIZE=131072
 ```
 
 (5) The following setup is for testing alltoall 
-```
+```bash
 export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
