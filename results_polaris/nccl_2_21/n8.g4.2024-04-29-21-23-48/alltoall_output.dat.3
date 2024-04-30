@@ -1,0 +1,75 @@
+# nThread 1 nGpus 1 minBytes 4 maxBytes 1073741824 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  80568 on x3207c0s13b1n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  1 Group  0 Pid  80569 on x3207c0s13b1n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank  2 Group  0 Pid  80570 on x3207c0s13b1n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank  3 Group  0 Pid  80571 on x3207c0s13b1n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank  4 Group  0 Pid  78540 on x3207c0s19b0n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  5 Group  0 Pid  78541 on x3207c0s19b0n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank  6 Group  0 Pid  78542 on x3207c0s19b0n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank  7 Group  0 Pid  78543 on x3207c0s19b0n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank  8 Group  0 Pid  79633 on x3207c0s19b1n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  9 Group  0 Pid  79634 on x3207c0s19b1n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank 10 Group  0 Pid  79635 on x3207c0s19b1n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank 11 Group  0 Pid  79636 on x3207c0s19b1n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank 12 Group  0 Pid  78513 on x3207c0s1b0n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank 13 Group  0 Pid  78514 on x3207c0s1b0n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank 14 Group  0 Pid  78515 on x3207c0s1b0n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank 15 Group  0 Pid  78516 on x3207c0s1b0n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank 16 Group  0 Pid  79669 on x3207c0s1b1n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank 17 Group  0 Pid  79670 on x3207c0s1b1n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank 18 Group  0 Pid  79671 on x3207c0s1b1n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank 19 Group  0 Pid  79672 on x3207c0s1b1n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank 20 Group  0 Pid  79568 on x3207c0s25b0n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank 21 Group  0 Pid  79569 on x3207c0s25b0n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank 22 Group  0 Pid  79570 on x3207c0s25b0n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank 23 Group  0 Pid  79571 on x3207c0s25b0n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank 24 Group  0 Pid  79647 on x3207c0s25b1n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank 25 Group  0 Pid  79648 on x3207c0s25b1n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank 26 Group  0 Pid  79649 on x3207c0s25b1n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank 27 Group  0 Pid  79650 on x3207c0s25b1n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank 28 Group  0 Pid  79186 on x3207c0s31b0n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank 29 Group  0 Pid  79187 on x3207c0s31b0n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank 30 Group  0 Pid  79188 on x3207c0s31b0n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank 31 Group  0 Pid  79189 on x3207c0s31b0n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw #wrong     time   algbw   busbw #wrong
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
+           0             0     float    none      -1    74.28    0.00    0.00      0    72.89    0.00    0.00    N/A
+           0             0     float    none      -1    72.65    0.00    0.00      0    73.79    0.00    0.00    N/A
+           0             0     float    none      -1    72.30    0.00    0.00      0    72.43    0.00    0.00    N/A
+           0             0     float    none      -1    72.82    0.00    0.00      0    72.86    0.00    0.00    N/A
+           0             0     float    none      -1    72.31    0.00    0.00      0    71.98    0.00    0.00    N/A
+         128             1     float    none      -1    658.9    0.00    0.00      0    641.2    0.00    0.00    N/A
+         256             2     float    none      -1    673.1    0.00    0.00      0    665.6    0.00    0.00    N/A
+         512             4     float    none      -1    669.5    0.00    0.00      0    672.7    0.00    0.00    N/A
+        1024             8     float    none      -1    653.1    0.00    0.00      0    645.6    0.00    0.00    N/A
+        2048            16     float    none      -1    617.3    0.00    0.00      0    662.5    0.00    0.00    N/A
+        4096            32     float    none      -1    712.6    0.01    0.01      0    667.6    0.01    0.01    N/A
+        8192            64     float    none      -1    172.4    0.05    0.05      0    185.8    0.04    0.04    N/A
+       16384           128     float    none      -1    194.6    0.08    0.08      0    200.5    0.08    0.08    N/A
+       32768           256     float    none      -1    191.8    0.17    0.17      0    188.1    0.17    0.17    N/A
+       65536           512     float    none      -1    206.0    0.32    0.31      0    206.0    0.32    0.31    N/A
+      131072          1024     float    none      -1    232.9    0.56    0.55      0    317.4    0.41    0.40    N/A
+      262144          2048     float    none      -1    219.1    1.20    1.16      0    248.8    1.05    1.02    N/A
+      524288          4096     float    none      -1    219.7    2.39    2.31      0    210.5    2.49    2.41    N/A
+     1048576          8192     float    none      -1    259.1    4.05    3.92      0    236.1    4.44    4.30    N/A
+     2097152         16384     float    none      -1    508.8    4.12    3.99      0    468.2    4.48    4.34    N/A
+     4194304         32768     float    none      -1    873.4    4.80    4.65      0    738.7    5.68    5.50    N/A
+     8388608         65536     float    none      -1   1711.5    4.90    4.75      0   1582.2    5.30    5.14    N/A
+    16777216        131072     float    none      -1   3639.5    4.61    4.47      0   3595.5    4.67    4.52    N/A
+    33554432        262144     float    none      -1   6328.4    5.30    5.14      0   6303.4    5.32    5.16    N/A
+    67108864        524288     float    none      -1    12632    5.31    5.15      0    12740    5.27    5.10    N/A
+   134217728       1048576     float    none      -1    26462    5.07    4.91      0    25681    5.23    5.06    N/A
+   268435456       2097152     float    none      -1    54547    4.92    4.77      0    54290    4.94    4.79    N/A
+   536870912       4194304     float    none      -1   174775    3.07    2.98      0   113171    4.74    4.60    N/A
+  1073741824       8388608     float    none      -1   238600    4.50    4.36      0   238178    4.51    4.37    N/A
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 1.91429 
+#
+
+MPICH Slingshot Network Summary: 3 network timeouts
+
+
