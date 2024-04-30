@@ -38,7 +38,7 @@ aprun -n $((PBS_JOBSIZE*4)) -N 4 --cc depth -d 16 ./build/all_gather_perf -b 4 -
 sleep 10
 
 export NCCL_NET="AWS Libfabric"
-export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws/lib:${LD_LIBRARY_PATH}
 env >& $OUTPUT/env.dat.3
 aprun -n $((PBS_JOBSIZE*4)) -N 4 --cc depth -d 16 ./build/all_reduce_perf -b 4 -e 1073741824 -f 2 -g 1 >& $OUTPUT/all_reduce_output.dat.3
 sleep 10
