@@ -1,0 +1,48 @@
+# nThread 1 nGpus 1 minBytes 4 maxBytes 1073741824 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  36600 on x3006c0s1b1n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  1 Group  0 Pid  36601 on x3006c0s1b1n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank  2 Group  0 Pid  36602 on x3006c0s1b1n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank  3 Group  0 Pid  36603 on x3006c0s1b1n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank  4 Group  0 Pid  36031 on x3006c0s25b0n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  5 Group  0 Pid  36032 on x3006c0s25b0n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank  6 Group  0 Pid  36033 on x3006c0s25b0n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank  7 Group  0 Pid  36034 on x3006c0s25b0n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw #wrong     time   algbw   busbw #wrong
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
+           0             0     float    none      -1     7.59    0.00    0.00      0     7.52    0.00    0.00      0
+           0             0     float    none      -1     7.50    0.00    0.00      0     7.44    0.00    0.00      0
+           0             0     float    none      -1     7.57    0.00    0.00      0     7.53    0.00    0.00      0
+           0             0     float    none      -1     7.49    0.00    0.00      0     7.45    0.00    0.00      0
+           0             0     float    none      -1     7.48    0.00    0.00      0     7.55    0.00    0.00      0
+         128             4     float    none      -1    59.12    0.00    0.00      0    54.40    0.00    0.00      0
+         256             8     float    none      -1    54.45    0.00    0.00      0    53.39    0.00    0.00      0
+         512            16     float    none      -1    56.33    0.01    0.01      0    56.10    0.01    0.01      0
+        1024            32     float    none      -1    58.12    0.02    0.02      0    56.03    0.02    0.02      0
+        2048            64     float    none      -1    57.72    0.04    0.03      0    56.37    0.04    0.03      0
+        4096           128     float    none      -1    55.75    0.07    0.06      0    56.10    0.07    0.06      0
+        8192           256     float    none      -1    58.46    0.14    0.12      0    57.95    0.14    0.12      0
+       16384           512     float    none      -1    58.47    0.28    0.25      0    59.85    0.27    0.24      0
+       32768          1024     float    none      -1    63.91    0.51    0.45      0    79.74    0.41    0.36      0
+       65536          2048     float    none      -1    98.42    0.67    0.58      0    108.5    0.60    0.53      0
+      131072          4096     float    none      -1    163.9    0.80    0.70      0    157.0    0.83    0.73      0
+      262144          8192     float    none      -1    218.2    1.20    1.05      0    217.4    1.21    1.05      0
+      524288         16384     float    none      -1    315.7    1.66    1.45      0    307.7    1.70    1.49      0
+     1048576         32768     float    none      -1    313.2    3.35    2.93      0    319.4    3.28    2.87      0
+     2097152         65536     float    none      -1    476.9    4.40    3.85      0    461.5    4.54    3.98      0
+     4194304        131072     float    none      -1    778.9    5.38    4.71      0    742.7    5.65    4.94      0
+     8388608        262144     float    none      -1   1307.8    6.41    5.61      0   1281.0    6.55    5.73      0
+    16777216        524288     float    none      -1   2366.0    7.09    6.20      0   2422.9    6.92    6.06      0
+    33554432       1048576     float    none      -1   4292.4    7.82    6.84      0   4351.7    7.71    6.75      0
+    67108864       2097152     float    none      -1   8165.6    8.22    7.19      0   8067.3    8.32    7.28      0
+   134217728       4194304     float    none      -1    14716    9.12    7.98      0    14677    9.14    8.00      0
+   268435456       8388608     float    none      -1    27808    9.65    8.45      0    27922    9.61    8.41      0
+   536870912      16777216     float    none      -1    55103    9.74    8.53      0    54269    9.89    8.66      0
+  1073741824      33554432     float    none      -1   104394   10.29    9.00      0   104288   10.30    9.01      0
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 2.62677 
+#
+

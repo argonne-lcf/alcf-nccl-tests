@@ -1,0 +1,81 @@
+Data for MPI rank 0 of 32:
+Times from MPI_Init() to MPI_Finalize().
+-----------------------------------------------------------------------
+MPI Routine                        #calls     avg. bytes      time(sec)
+-----------------------------------------------------------------------
+MPI_Comm_rank                           2            0.0          0.000
+MPI_Comm_size                           2            0.0          0.000
+MPI_Bcast                               1          128.0          0.000
+MPI_Barrier                           110            0.0          0.024
+MPI_Allreduce                         110            8.0          0.038
+MPI_Gather                              1         2048.0          0.069
+MPI_Allgather                           1            8.0          0.009
+-----------------------------------------------------------------------
+total communication time = 0.140 seconds.
+total elapsed time       = 6.484 seconds.
+user cpu time            = 1.075 seconds.
+system time              = 5.313 seconds.
+max resident set size    = 461.016 MiB.
+
+-----------------------------------------------------------------
+Message size distributions:
+
+MPI_Bcast                 #calls    avg. bytes      time(sec)
+                               1         128.0          0.000
+
+MPI_Allreduce             #calls    avg. bytes      time(sec)
+                               1           4.0          0.000
+                             109           8.0          0.038
+
+MPI_Gather                #calls    avg. bytes      time(sec)
+                               1        2048.0          0.069
+
+MPI_Allgather             #calls    avg. bytes      time(sec)
+                               1           8.0          0.009
+
+-----------------------------------------------------------------
+
+Summary for all tasks:
+
+  Rank 4 reported the largest memory utilization : 500.55 MiB
+  Rank 8 reported the largest elapsed time : 6.49 sec
+
+  minimum communication time = 0.038 sec for task 5
+  median  communication time = 0.071 sec for task 14
+  maximum communication time = 0.140 sec for task 28
+
+
+MPI timing summary for all ranks:
+taskid             host    cpu    comm(s)  elapsed(s)     user(s)   system(s)   size(MiB)    switches
+     0   x3004c0s13b0n0      1       0.14        6.48        1.07        5.31      461.02          13
+     1   x3004c0s13b0n0     26       0.06        6.48        3.73        7.07      422.59          14
+     2   x3004c0s13b0n0     47       0.07        6.47        1.09        4.96      377.83           9
+     3   x3004c0s13b0n0     53       0.08        6.47        3.36        7.46      422.49           8
+     4   x3004c0s13b1n0      8       0.08        6.48        1.25        5.16      500.55           6
+     5   x3004c0s13b1n0     28       0.04        6.48        3.81        7.23      460.23          22
+     6   x3004c0s13b1n0     45       0.05        6.46        1.00        5.05      377.62           6
+     7   x3004c0s13b1n0     48       0.05        6.46        3.11        7.70      424.62          14
+     8   x3004c0s19b0n0     13       0.11        6.49        1.19        5.23      498.41          16
+     9   x3004c0s19b0n0     28       0.06        6.49        3.73        7.33      459.55          18
+    10   x3004c0s19b0n0     38       0.06        6.47        0.95        5.12      377.95           9
+    11   x3004c0s19b0n0     52       0.07        6.47        2.94        7.88      422.02           8
+    12   x3004c0s19b1n0      1       0.12        6.48        1.23        5.16      498.29          14
+    13   x3004c0s19b1n0     28       0.07        6.48        3.78        7.23      459.54          28
+    14   x3004c0s19b1n0     41       0.07        6.46        1.04        5.02      377.67           8
+    15   x3004c0s19b1n0     55       0.05        6.46        3.35        7.45      422.43          30
+    16    x3004c0s1b0n0      1       0.14        6.49        1.29        5.14      498.88           6
+    17    x3004c0s1b0n0     24       0.08        6.49        3.82        7.24      462.53          19
+    18    x3004c0s1b0n0     44       0.09        6.47        1.04        5.04      386.81           8
+    19    x3004c0s1b0n0     55       0.07        6.47        3.06        7.75      422.91          20
+    20    x3004c0s1b1n0     10       0.12        6.48        4.19        2.18      498.99           7
+    21    x3004c0s1b1n0     25       0.06        6.48        6.87        4.14      460.01          14
+    22    x3004c0s1b1n0     32       0.06        6.46        3.92        2.11      378.20          10
+    23    x3004c0s1b1n0     53       0.07        6.46        6.12        4.64      422.91           8
+    24   x3004c0s25b0n0      4       0.12        6.49        1.26        5.16      498.29           8
+    25   x3004c0s25b0n0     28       0.08        6.49        3.93        7.16      460.39          23
+    26   x3004c0s25b0n0     33       0.06        6.47        1.08        4.99      378.06           8
+    27   x3004c0s25b0n0     54       0.07        6.47        3.29        7.53      422.46          14
+    28   x3004c0s25b1n0     10       0.14        6.47        1.19        5.19      461.20          12
+    29   x3004c0s25b1n0     24       0.07        6.47        3.77        7.04      424.24          15
+    30   x3004c0s25b1n0     32       0.07        6.46        1.10        4.96      378.04          14
+    31   x3004c0s25b1n0     55       0.06        6.46        3.31        7.51      422.82          14
