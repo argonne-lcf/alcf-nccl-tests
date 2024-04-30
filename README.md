@@ -1,7 +1,18 @@
-# Testing NCCL performance on ALCF machines
+# Testing NCCL performance on ALCF systems
 
-This is for performing NCCL tests with different environment setups (1)-(5).
+This is for performing NCCL tests with different environment setups (1)-(5) to identify the best setup for NCCL on ALCF systems. We find out that the optimal setup is
 
+```bash
+export NCCL_NET_GDR_LEVEL=PHB
+export NCCL_CROSS_NIC=1
+export NCCL_COLLNET_ENABLE=1
+export NCCL_NET="AWS Libfabric"
+export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
+export FI_CXI_DISABLE_HOST_REGISTER=1
+export FI_MR_CACHE_MONITOR=userfaultfd
+export FI_CXI_DEFAULT_CQ_SIZE=131072
+```
+This achieves 5-10x improvement over the default setup. 
 
 ## Different environment setups
 
