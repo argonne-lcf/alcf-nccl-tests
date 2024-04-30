@@ -57,29 +57,32 @@ export FI_CXI_RX_MATCH_MODE=software
 export FI_CXI_RDZV_PROTO=alt_read
 export FI_CXI_REQ_BUF_SIZE=8388608
 ```
-## Results
+## Results & Conclusion
 
 The results are shown in [./results_polaris](./results_polaris). One can find analysis here: [./nccl-performance-evaluation.ipynb](./nccl-performance-evaluation.ipynb)
 
 The main conclusions are: 
 
-* For allreduce and all_gather, the best setup is following. We achieve 5-10x improvement over the default setup.
-```bash
-export NCCL_NET_GDR_LEVEL=PHB
-export NCCL_CROSS_NIC=1
-export NCCL_COLLNET_ENABLE=1
-export NCCL_NET="AWS Libfabric"
-export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
-export FI_CXI_DISABLE_HOST_REGISTER=1
-export FI_MR_CACHE_MONITOR=userfaultfd
-export FI_CXI_DEFAULT_CQ_SIZE=131072
-```
+* For allreduce and all_gather, the best setup is following. We achieve 5-10x improvement over the default setup. 
+
+    ```bash
+    export NCCL_NET_GDR_LEVEL=PHB
+    export NCCL_CROSS_NIC=1
+    export NCCL_COLLNET_ENABLE=1
+    export NCCL_NET="AWS Libfabric"
+    export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
+    export FI_CXI_DISABLE_HOST_REGISTER=1
+    export FI_MR_CACHE_MONITOR=userfaultfd
+    export FI_CXI_DEFAULT_CQ_SIZE=131072
+    ```
 
 * For alltoall with message size larger than 8MB, additional setup is needed. But this will influence the latency for allreduce and all_gather at smaller message size (<1MB)
-```
-export FI_CXI_RX_MATCH_MODE=software
-export FI_CXI_RDZV_PROTO=alt_read
-export FI_CXI_REQ_BUF_SIZE=8388608
-```
+    ```bash
+    export FI_CXI_RX_MATCH_MODE=software
+    export FI_CXI_RDZV_PROTO=alt_read
+    export FI_CXI_REQ_BUF_SIZE=8388608
+    ```
+    
+* For allreduce, Slingshot 11 with (4) setup is 3x speed up over slingshot 10 results (for message size over 10 MB)
 * We were able to run up to 540 nodes with (4) and (5).
 * With (1), we were not able to go beyond 128 nodes. all_gather will cause node failure. 
