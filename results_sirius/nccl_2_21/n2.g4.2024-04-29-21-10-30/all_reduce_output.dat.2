@@ -1,0 +1,50 @@
+Read only 28 bytes from /etc/pals/server_key.pub, expected 40
+Couldn't read server key, disabling ZeroMQ CURVE security
+# nThread 1 nGpus 1 minBytes 4 maxBytes 1073741824 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid 1985237 on x3200c0s31b1n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  1 Group  0 Pid 1985238 on x3200c0s31b1n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank  2 Group  0 Pid 1985239 on x3200c0s31b1n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank  3 Group  0 Pid 1985240 on x3200c0s31b1n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#  Rank  4 Group  0 Pid 1672666 on x3200c0s37b1n0 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  5 Group  0 Pid 1672667 on x3200c0s37b1n0 device  1 [0x46] NVIDIA A100-SXM4-40GB
+#  Rank  6 Group  0 Pid 1672668 on x3200c0s37b1n0 device  2 [0x85] NVIDIA A100-SXM4-40GB
+#  Rank  7 Group  0 Pid 1672669 on x3200c0s37b1n0 device  3 [0xc7] NVIDIA A100-SXM4-40GB
+#
+#                                                              out-of-place                       in-place          
+#       size         count      type   redop    root     time   algbw   busbw #wrong     time   algbw   busbw #wrong
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)            (us)  (GB/s)  (GB/s)       
+           4             1     float     sum      -1    49.50    0.00    0.00      0    45.73    0.00    0.00      0
+           8             2     float     sum      -1    45.44    0.00    0.00      0    45.22    0.00    0.00      0
+          16             4     float     sum      -1    45.19    0.00    0.00      0    45.11    0.00    0.00      0
+          32             8     float     sum      -1    44.21    0.00    0.00      0    45.37    0.00    0.00      0
+          64            16     float     sum      -1    45.64    0.00    0.00      0    45.35    0.00    0.00      0
+         128            32     float     sum      -1    47.12    0.00    0.00      0    46.04    0.00    0.00      0
+         256            64     float     sum      -1    47.36    0.01    0.01      0    48.86    0.01    0.01      0
+         512           128     float     sum      -1    51.05    0.01    0.02      0    50.76    0.01    0.02      0
+        1024           256     float     sum      -1    54.62    0.02    0.03      0    53.34    0.02    0.03      0
+        2048           512     float     sum      -1    56.59    0.04    0.06      0    56.36    0.04    0.06      0
+        4096          1024     float     sum      -1    67.40    0.06    0.11      0    63.05    0.06    0.11      0
+        8192          2048     float     sum      -1    71.74    0.11    0.20      0    63.77    0.13    0.22      0
+       16384          4096     float     sum      -1    78.01    0.21    0.37      0    72.81    0.23    0.39      0
+       32768          8192     float     sum      -1    96.32    0.34    0.60      0    104.7    0.31    0.55      0
+       65536         16384     float     sum      -1    151.3    0.43    0.76      0    145.7    0.45    0.79      0
+      131072         32768     float     sum      -1    558.6    0.23    0.41      0    572.7    0.23    0.40      0
+      262144         65536     float     sum      -1    709.6    0.37    0.65      0    708.5    0.37    0.65      0
+      524288        131072     float     sum      -1    999.6    0.52    0.92      0    981.8    0.53    0.93      0
+     1048576        262144     float     sum      -1   1622.4    0.65    1.13      0   1614.0    0.65    1.14      0
+     2097152        524288     float     sum      -1   3104.4    0.68    1.18      0   3086.7    0.68    1.19      0
+     4194304       1048576     float     sum      -1   3085.8    1.36    2.38      0   3102.9    1.35    2.37      0
+     8388608       2097152     float     sum      -1   5355.4    1.57    2.74      0   5447.6    1.54    2.69      0
+    16777216       4194304     float     sum      -1    10200    1.64    2.88      0    10022    1.67    2.93      0
+    33554432       8388608     float     sum      -1    18601    1.80    3.16      0    18361    1.83    3.20      0
+    67108864      16777216     float     sum      -1    34847    1.93    3.37      0    34610    1.94    3.39      0
+   134217728      33554432     float     sum      -1    69210    1.94    3.39      0    72775    1.84    3.23      0
+   268435456      67108864     float     sum      -1   144324    1.86    3.25      0   143707    1.87    3.27      0
+   536870912     134217728     float     sum      -1   284181    1.89    3.31      0   284318    1.89    3.30      0
+  1073741824     268435456     float     sum      -1   562554    1.91    3.34      0   557463    1.93    3.37      0
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 1.18156 
+#
+
