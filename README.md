@@ -7,7 +7,8 @@ export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
 export NCCL_NET="AWS Libfabric"
-export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/soft/libraries/hwloc/lib/:$LD_LIBRARY_PATH
 export FI_CXI_DISABLE_HOST_REGISTER=1
 export FI_MR_CACHE_MONITOR=userfaultfd
 export FI_CXI_DEFAULT_CQ_SIZE=131072
@@ -31,7 +32,7 @@ export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
 export NCCL_NET="AWS Libfabric"
-export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws/lib:$LD_LIBRARY_PATH
 ```
 
 Note that this will requires the AWS plugin, which can be built on Polaris
@@ -39,7 +40,7 @@ Note that this will requires the AWS plugin, which can be built on Polaris
 git clone v1.9.1-aws https://github.com/aws/aws-ofi-nccl.git
 cd aws-ofi-nccl
 ./configure --prefix=/home/hzheng/PolarisAT/soft/aws-ofi-nccl --with-libfabric=/opt/cray/libfabric/1.15.2.0/ --with-cuda=/soft/compilers/cudatoolkit/cuda\
--12.4.1 --with-hwloc=/home/hzheng/PolarisAT/pyenvs/hwloc/
+-12.4.1 --with-hwloc=/soft/libraries/hwloc/
 ```
 
 (4) the following setup is to see how FI environment variables help
@@ -48,7 +49,7 @@ export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
 export NCCL_NET="AWS Libfabric"
-export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws/lib:$LD_LIBRARY_PATH
 export FI_CXI_DISABLE_HOST_REGISTER=1
 export FI_MR_CACHE_MONITOR=userfaultfd
 export FI_CXI_DEFAULT_CQ_SIZE=131072
@@ -60,7 +61,7 @@ export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
 export NCCL_NET="AWS Libfabric"
-export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws/lib:$LD_LIBRARY_PATH
 export FI_CXI_DISABLE_HOST_REGISTER=1
 export FI_MR_CACHE_MONITOR=userfaultfd
 export FI_CXI_DEFAULT_CQ_SIZE=131072
@@ -81,7 +82,8 @@ The main conclusions are:
     export NCCL_CROSS_NIC=1
     export NCCL_COLLNET_ENABLE=1
     export NCCL_NET="AWS Libfabric"
-    export LD_LIBRARY_PATH=${HOME}/PolarisAT/soft/aws-ofi-nccl/lib:${LD_LIBRARY_PATH}
+    export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws/lib:$LD_LIBRARY_PATH
+    export LD_LIBRARY_PATH=/soft/libraries/hwloc/lib/:$LD_LIBRARY_PATH
     export FI_CXI_DISABLE_HOST_REGISTER=1
     export FI_MR_CACHE_MONITOR=userfaultfd
     export FI_CXI_DEFAULT_CQ_SIZE=131072
