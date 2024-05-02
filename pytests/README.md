@@ -3,7 +3,7 @@
 
 This study is for investigating the issues
 
-Different columns correspond different environment setups. Different rows correspond to different process grids (nodes x ppn). 
+Different columns correspond different environment setups. Different rows correspond to different process grids (nodes x ppn). 1 means sucess, and 0 means failure. 
 
 | Setup  |    (0)   |   (1)   |   (2)   |   (3)  |  
 | ------ |  ------- | ------- | ------- | ------ |
