@@ -3,6 +3,8 @@
 
 This study is for investigating the issues
 
+## Results and Conclusion
+
 Different columns correspond different environment setups. Different rows correspond to different process grids (nodes x ppn). 1 means sucess, and 0 means failure. 
 
 | Setup  |    (0)   |   (1)   |   (2)   |   (3)  |  
@@ -56,6 +58,7 @@ export FI_CXI_DEFAULT_CQ_SIZE=131072
 ```
 
 
+## Appendix: Different Environment Settings
 (0) Full environment setup identified through NCCL-tests
 ```bash
 export NCCL_NET_GDR_LEVEL=PHB
