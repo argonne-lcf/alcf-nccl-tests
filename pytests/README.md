@@ -64,6 +64,8 @@ x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov: rank 0 exited with code 134
 x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov: rank 1 died from signal 15
 ```
 
+In order to identify the issue, we check different environement setups and see which one is causing the issue. 
+
 ## Results and Conclusion
 
 Different columns correspond different environment setups. Different rows correspond to different process grids (nodes x ppn). 1 means sucess, and 0 means failure. 
