@@ -14,7 +14,7 @@ Different columns correspond different environment setups. Different rows corres
 
 
 (0) Full environment setup identified through NCCL-tests
-```
+```bash
 export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
