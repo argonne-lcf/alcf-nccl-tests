@@ -3,7 +3,7 @@
 
 This study is for investigating the issues
 
-Different columns correspond different environment setups. Different rows correspond to different process grids (nodes x ppn)
+Different columns correspond different environment setups. Different rows correspond to different process grids (nodes x ppn). 
 
 | Setup  |    (0)   |   (1)   |   (2)   |   (3)  |  
 | ------ |  ------- | ------- | ------- | ------ |
@@ -12,6 +12,27 @@ Different columns correspond different environment setups. Different rows corres
 | 2x2    |    0     |    0    |    1    |    1   |
 | 2x4    |    0     |    0    |    1    |    1   |
 
+We find that anytime when we have a set of NCCL environment, it will fail going beyond single nodes. 
+```bash
+export NCCL_NET_GDR_LEVEL=PHB
+export NCCL_CROSS_NIC=1
+export NCCL_COLLNET_ENABLE=1
+```
+
+Now we would like see what are the problem for each of the three NCC environment variables [let us designated as (a-c)]
+
+| Setup  |   (0-a)  |  (0-b)  |  (0-c)  | (0-ab) | (0-ac) | (0-bc) |
+| ------ |  ------- | ------- | ------- | ------ |  ----- | ------ |
+| 1x4    |    1     |    1    |    1    |    1   |    1   |    1   |
+| 2x1    |    1     |    1    |    1    |    1   |    1   |    1   |
+| 2x2    |    0     |    1    |    1    |    0   |    0   |    1   |
+| 2x4    |    0     |    1    |    1    |    0   |    0   |    1   |
+
+We found that the true problem is from 
+```
+export NCCL_NET_GDR_LEVEL=PHB
+```
+Unfortunately, this environment is very key to NCCL performance. 
 
 (0) Full environment setup identified through NCCL-tests
 ```
