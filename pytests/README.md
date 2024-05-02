@@ -29,13 +29,13 @@ Now we would like see what are the problem for each of the three NCC environment
 | 2x4    |    0     |    1    |    1    |    0   |    0   |    1   |
 
 We found that the true problem is from 
-```
+```bash
 export NCCL_NET_GDR_LEVEL=PHB
 ```
 Unfortunately, this environment is very key to NCCL performance. 
 
 (0) Full environment setup identified through NCCL-tests
-```
+```bash
 export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
