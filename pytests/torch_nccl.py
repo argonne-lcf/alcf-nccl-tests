@@ -7,6 +7,7 @@ t1 = datetime.datetime.now()
 import torch.distributed as dist
 t2 = datetime.datetime.now()
 elapsed = (t2 - t1).total_seconds()
+import torch
 
 rank = int(os.environ['RANK'])
 world_size = int(os.environ['WORLD_SIZE'])
@@ -16,6 +17,11 @@ if (rank==0):
    master_addr=socket.gethostname()
    print(master_addr)
    assert(master_addr.find(os.environ["MASTER_ADDR"])!=-1)
+
+   print(f"{torch.__version__}")
+   print(f"{torch.__file__}")
+   print(f"{torch.cuda.nccl.version()}")
+   
 
 os.environ["MASTER_PORT"]   = str(master_port)
 

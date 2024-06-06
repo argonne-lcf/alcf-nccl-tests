@@ -1,0 +1,137 @@
+I am 0 of 2: 0 on x3200c0s13b0n0 - MASTER_ADDR=x3200c0s13b0n0
+I am 1 of 2: 0 on x3200c0s13b1n0 - MASTER_ADDR=x3200c0s13b0n0
+x3200c0s13b0n0:3607247:3607247 [0] NCCL INFO Bootstrap : Using bond0:10.140.48.176<0>
+x3200c0s13b0n0:3607247:3607247 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
+x3200c0s13b0n0:3607247:3607247 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
+x3200c0s13b0n0:3607247:3607247 [0] NCCL INFO cudaDriverVersion 12020
+NCCL version 2.18.3+cuda12.2
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3200c0s13b0n0:3607247:3607394 [0] 1206.829589 nccl_net_ofi_init:1395 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3200c0s13b0n0:3607247:3607394 [0] 1206.834288 nccl_net_ofi_init:1405 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3200c0s13b0n0:3607247:3607394 [0] 1206.835620 nccl_net_ofi_init:1424 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3200c0s13b0n0:3607247:3607394 [0] 1206.836522 nccl_net_ofi_init:1458 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Using network AWS Libfabric
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO DMA-BUF is available on GPU device 0
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO comm 0x5560348261e0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 7000 commId 0xd7b0415e27908b53 - Init START
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Channel 00/02 :    0   1
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Channel 01/02 :    0   1
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO P2P Chunksize set to 131072
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/AWS Libfabric/1
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/AWS Libfabric/1
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/AWS Libfabric/1
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/AWS Libfabric/1
+x3200c0s13b0n0:3607247:3607395 [0] 1280.324546 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3200c0s13b0n0:3607247:3607395 [0] 1280.333303 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1285.059011 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1285.062367 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1285.063570 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1289.885429 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1289.888795 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1289.889877 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1294.834176 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1294.837963 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1294.838895 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1294.867990 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3200c0s13b0n0:3607247:3607395 [0] 1294.874041 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1299.778746 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1299.781851 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:3607395 [0] 1299.782773 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b0n0:3607247:36073x3200c0s13b1n0:1875371:1875371 [0] NCCL INFO cudaDriverVersion 12020
+x3200c0s13b1n0:1875371:1875371 [0] NCCL INFO Bootstrap : Using bond0:10.140.48.177<0>
+x3200c0s13b1n0:1875371:1875371 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v6 symbol.
+x3200c0s13b1n0:1875371:1875371 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (v4 or v5).
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3200c0s13b1n0:1875371:1875519 [0] 1081.597426 nccl_net_ofi_init:1395 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3200c0s13b1n0:1875371:1875519 [0] 1081.607866 nccl_net_ofi_init:1405 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3200c0s13b1n0:1875371:1875519 [0] 1081.609309 nccl_net_ofi_init:1424 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3200c0s13b1n0:1875371:1875519 [0] 1081.610290 nccl_net_ofi_init:1458 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO Using network AWS Libfabric
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO DMA-BUF is available on GPU device 0
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO comm 0x564380f763a0 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId 7000 commId 0xd7b0415e27908b53 - Init START
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO P2P Chunksize set to 131072
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/AWS Libfabric/1
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/AWS Libfabric/1
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/AWS Libfabric/1
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/AWS Libfabric/1
+x3200c0s13b1n0:1875371:1875520 [0] 1169.735788 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1169.742090 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1169.743592 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1169.786243 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3200c0s13b1n0:1875371:1875520 [0] 1169.796532 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1174.718087 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1174.721463 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1174.722585 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1179.791718 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1179.795785 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1179.796817 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1179.853374 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3200c0s13b1n0:1875371:1875520 [0] 1179.858563 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1184.850160 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1184.853747 register_mr_buffers:imported all the libraries
+x3200c0s13b0n0
+2.3.0a0+git97ff6cf
+/home/hzheng/PolarisAT/alcf-nccl-tests/pytests/venvs/torch_2.3.0.nccl_2.18/lib/python3.11/site-packages/torch/__init__.py
+(2, 18, 3)
+F-profiling complted at t4 2024-06-06 16:34:45.000339 (import hvd init - time : 1.51069)
+dist_my_rank = 0  dist_world_size = 2
+[0-0] cuda:0
+[0] Python: Elapsed time in each iter for all_reduce : 1.50540)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00010)
+imported all the libraries
+F-profiling complted at t4 2024-06-06 16:34:44.988919 (import hvd init - time : 1.49901)
+dist_my_rank = 1  dist_world_size = 2
+[1-0] cuda:0
+[1] Python: Elapsed time in each iter for all_reduce : 1.50619)
+[1] Python: Elapsed time in each iter for all_reduce : 0.00010)
+94 [0] NCCL INFO Connected all rings
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO Connected all trees
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+x3200c0s13b0n0:3607247:3607394 [0] NCCL INFO comm 0x5560348261e0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 7000 commId 0xd7b0415e27908b53 - Init COMPLETE
+x3200c0s13b0n0:3607247:3607395 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+x3200c0s13b0n0:3607247:3607395 [0] 1935.839896 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1935.854574 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1935.857709 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1938.018044 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3200c0s13b0n0:3607247:3607395 [0] 1938.027932 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1938.029024 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1938.029776 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1939.907460 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3200c0s13b0n0:3607247:3607395 [0] 1939.913481 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1939.914493 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1939.915355 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1941.745229 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1941.747904 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607395 [0] 1941.748775 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b0n0:3607247:3607397 [0] NCCL INFO comm 0x5560348261e0 rank 0 nranks 2 cudaDev 0 busId 7000 - Abort COMPLETE
+584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875520 [0] 1184.862313 register_mr_buffers:584 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO Connected all rings
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO Connected all trees
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO 2 coll channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+x3200c0s13b1n0:1875371:1875519 [0] NCCL INFO comm 0x564380f763a0 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId 7000 commId 0xd7b0415e27908b53 - Init COMPLETE
+x3200c0s13b1n0:1875371:1875520 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+x3200c0s13b1n0:1875371:1875520 [0] 1820.653627 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1820.663766 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1820.666742 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1823.269937 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3200c0s13b1n0:1875371:1875520 [0] 1823.279265 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1823.280287 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1823.281138 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1825.177174 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3200c0s13b1n0:1875371:1875520 [0] 1825.183135 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1825.184107 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1825.184908 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1827.148972 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1827.151336 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875520 [0] 1827.152148 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3200c0s13b1n0:1875371:1875522 [0] NCCL INFO comm 0x564380f763a0 rank 1 nranks 2 cudaDev 0 busId 7000 - Abort COMPLETE
