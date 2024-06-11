@@ -2,6 +2,9 @@
 
 This is for performing NCCL tests with different environment setups (1)-(5) to identify the best setup for NCCL on ALCF systems. We find out that the optimal setup is
 
+**ATTENTION** 
+For PYTHON workload, one has to remove ``export NCCL_NET_GDR_LEVEL=PHB`` on Polaris, because it will cause hang. 
+
 ```bash
 export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
