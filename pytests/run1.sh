@@ -13,7 +13,7 @@ export OUTPUT=logs1/$(date +"%Y-%m-%d-%H-%M-%S")
 mkdir -p $OUTPUT
 env >& $OUTPUT/env.dat
 module use /soft/modulefiles
-module load conda
+module load conda/2024-04-29
 conda activate
 echo "Running on single node"
 MASTER_ADDR=`hostname` mpiexec -np 4 --ppn 4 --cpu-bind depth -d 16 ./launcher.sh python torch_nccl.py >& $OUTPUT/n4.p4.dat
