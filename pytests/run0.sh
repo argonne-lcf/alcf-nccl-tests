@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l walltime=0:10:00 -q workq -l filesystems=home:eagle -A datascience -l select=2
+#PBS -l walltime=0:10:00 -q debug -l filesystems=home:eagle -A datascience -l select=2
 export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
