@@ -1,0 +1,41 @@
+# nThread 1 nGpus 1 minBytes 4 maxBytes 1073741824 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid 2567531 on sophia-gpu-09 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  1 Group  0 Pid 2567532 on sophia-gpu-09 device  1 [0x0f] NVIDIA A100-SXM4-40GB
+#  Rank  2 Group  0 Pid 2567533 on sophia-gpu-09 device  2 [0x47] NVIDIA A100-SXM4-40GB
+#  Rank  3 Group  0 Pid 2567534 on sophia-gpu-09 device  3 [0x4e] NVIDIA A100-SXM4-40GB
+#  Rank  4 Group  0 Pid 2567535 on sophia-gpu-09 device  4 [0x87] NVIDIA A100-SXM4-40GB
+#  Rank  5 Group  0 Pid 2567536 on sophia-gpu-09 device  5 [0x90] NVIDIA A100-SXM4-40GB
+#  Rank  6 Group  0 Pid 2567537 on sophia-gpu-09 device  6 [0xb7] NVIDIA A100-SXM4-40GB
+#  Rank  7 Group  0 Pid 2567538 on sophia-gpu-09 device  7 [0xbd] NVIDIA A100-SXM4-40GB
+#  Rank  8 Group  0 Pid 2633123 on sophia-gpu-13 device  0 [0x07] NVIDIA A100-SXM4-40GB
+#  Rank  9 Group  0 Pid 2633122 on sophia-gpu-13 device  1 [0x0f] NVIDIA A100-SXM4-40GB
+#  Rank 10 Group  0 Pid 2633124 on sophia-gpu-13 device  2 [0x47] NVIDIA A100-SXM4-40GB
+#  Rank 11 Group  0 Pid 2633125 on sophia-gpu-13 device  3 [0x4e] NVIDIA A100-SXM4-40GB
+#  Rank 12 Group  0 Pid 2633126 on sophia-gpu-13 device  4 [0x87] NVIDIA A100-SXM4-40GB
+#  Rank 13 Group  0 Pid 2633127 on sophia-gpu-13 device  5 [0x90] NVIDIA A100-SXM4-40GB
+#  Rank 14 Group  0 Pid 2633128 on sophia-gpu-13 device  6 [0xb7] NVIDIA A100-SXM4-40GB
+#  Rank 15 Group  0 Pid 2633130 on sophia-gpu-13 device  7 [0xbd] NVIDIA A100-SXM4-40GB
+sophia-gpu-13: Test NCCL failure common.cu:1012 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sophia-gpu-13 pid 2633128: Test failure common.cu:891
+sophia-gpu-13: Test NCCL failure common.cu:1012 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sophia-gpu-13 pid 2633123: Test failure common.cu:891
+sophia-gpu-13: Test NCCL failure common.cu:1012 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sophia-gpu-13 pid 2633124: Test failure common.cu:891
+sophia-gpu-13: Test NCCL failure common.cu:1012 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sophia-gpu-13 pid 2633127: Test failure common.cu:891
+sophia-gpu-13: Test NCCL failure common.cu:1012 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sophia-gpu-13 pid 2633125: Test failure common.cu:891
+sophia-gpu-13: Test NCCL failure common.cu:1012 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sophia-gpu-13 pid 2633126: Test failure common.cu:891
+sophia-gpu-13: Test NCCL failure common.cu:1012 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sophia-gpu-13 pid 2633130: Test failure common.cu:891
+sophia-gpu-13: Test NCCL failure common.cu:1012 'unhandled system error (run with NCCL_DEBUG=INFO for details) / '
+ .. sophia-gpu-13 pid 2633122: Test failure common.cu:891
+--------------------------------------------------------------------------
+prterun detected that one or more processes exited with non-zero status,
+thus causing the job to be terminated. The first process to do so was:
+
+   Process name: [prterun-sophia-gpu-09-2567338@1,10] Exit code:    3
+--------------------------------------------------------------------------
