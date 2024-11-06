@@ -3,7 +3,7 @@
 
 cd $PBS_O_WORKDIR
 module use /soft/modulefiles
-module load conda
+module load conda/2024-04-29
 source venvs/torch_2.3.0.nccl_2.18/bin/activate
 echo "which python: " `which python`
 

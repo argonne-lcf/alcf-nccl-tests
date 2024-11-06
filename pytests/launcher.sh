@@ -20,4 +20,5 @@ else
     export MASTER_ADDR=`cat ./hostname.$PBS_JOBID`
 fi
 echo "I am $RANK of $SIZE: $LOCAL_RANK on `hostname` - MASTER_ADDR=$MASTER_ADDR"
+
 $@

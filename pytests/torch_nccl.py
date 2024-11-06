@@ -1,37 +1,57 @@
-print("imported all the libraries")
+import datetime
+t1 = datetime.datetime.now()
+
+from mpi4py import MPI
+comm = MPI.COMM_WORLD
+
 import torch.nn.parallel
 import os
 import socket
-import datetime
-t1 = datetime.datetime.now()
 import torch.distributed as dist
-t2 = datetime.datetime.now()
-elapsed = (t2 - t1).total_seconds()
+
+
 import torch
+t2 = datetime.datetime.now()
+import_time = (t2 - t1).total_seconds()
 
-rank = int(os.environ['RANK'])
-world_size = int(os.environ['WORLD_SIZE'])
-local_rank = int(os.environ['LOCAL_RANK'])
-master_port              = 2345
-if (rank==0):
-   master_addr=socket.gethostname()
-   print(master_addr)
-   assert(master_addr.find(os.environ["MASTER_ADDR"])!=-1)
+def init_process_group():
+   try:
+      rank = int(os.environ['RANK'])
+      world_size = int(os.environ['WORLD_SIZE'])
+   except:
+      rank = comm.rank
+      world_size = comm.size
+   try:
+      local_rank = int(os.environ['LOCAL_RANK'])
+   except:
+      local_rank = rank%torch.cuda.device_count()
+      os.environ['LOCAL_RANK'] = str(local_rank)
+   master_port              = 2345
+   os.environ["MASTER_PORT"]   = str(master_port)
+   if "MASTER_ADDR" not in os.environ.keys():
+      master_addr = socket.gethostname()
+      comm.bcast(master_addr, root=0)
+      os.environ["MASTER_ADDR"] = master_addr
 
+   t3 = datetime.datetime.now()
+   dist.init_process_group(backend = "nccl", init_method = 'env://', world_size = world_size, rank = rank, timeout = datetime.timedelta(seconds=30))
+   t4 = datetime.datetime.now()
+   elapsed = (t4 - t3).total_seconds()
+   if rank==0:
+      print(f"import time: {import_time:.5f}")
+      print(f"torch init time : {elapsed:.5f}")
+   return rank, local_rank, world_size
+
+rank, local_rank, world_size = init_process_group()
+
+dist_my_rank        = dist.get_rank()
+dist_world_size     = dist.get_world_size()
+
+if rank == 0:    
    print(f"{torch.__version__}")
    print(f"{torch.__file__}")
    print(f"{torch.cuda.nccl.version()}")
-   
 
-os.environ["MASTER_PORT"]   = str(master_port)
-
-t3 = datetime.datetime.now()
-dist.init_process_group(backend = "nccl", init_method = 'env://', world_size = world_size, rank = rank, timeout = datetime.timedelta(seconds=120))
-t4 = datetime.datetime.now()
-elapsed = (t4 - t3).total_seconds()
-print(f"F-profiling complted at t4 {t4} (import hvd init - time : {elapsed:.5f})")
-dist_my_rank        = dist.get_rank()
-dist_world_size     = dist.get_world_size()
 print("dist_my_rank = %d  dist_world_size = %d" % (dist_my_rank, dist_world_size))
 
 def get_default_device():
@@ -40,12 +60,69 @@ def get_default_device():
 device  = get_default_device()
 print(f"[{dist_my_rank}-{local_rank}] {device}")
 
+#exit()
+comm.barrier()
 for _ in range(2):
-    x = torch.ones([1024, 1024]).to(device, non_blocking=True)
-    # print(x)
-    t5 = datetime.datetime.now() 
-    dist.all_reduce(x,op=dist.ReduceOp.SUM)  # Added Extra op
-    t6 = datetime.datetime.now()
-    elapsed = (t6 - t5).total_seconds() 
-    print(f"[{dist_my_rank}] Python: Elapsed time in each iter for all_reduce : {elapsed:.5f})")
-    
+   x = torch.ones([1024, 1024]).to(device, non_blocking=True)
+   # print(x)
+   t5 = datetime.datetime.now() 
+   dist.broadcast(x, src=0, async_op=True)  # Added Extra op
+   t6 = datetime.datetime.now()
+   elapsed = (t6 - t5).total_seconds() 
+   print(f"[{dist_my_rank}] Python: Elapsed time in each iter for broadcast: {elapsed:.5f})")
+
+comm.barrier()   
+for _ in range(2):
+   x = torch.ones([1024, 1024]).to(device, non_blocking=True)
+   # print(x)
+   t5 = datetime.datetime.now() 
+   dist.all_reduce(x,op=dist.ReduceOp.SUM)  # Added Extra op
+   t6 = datetime.datetime.now()
+   elapsed = (t6 - t5).total_seconds()
+   print(f"[{dist_my_rank}] Python: Elapsed time in each iter for all_reduce : {elapsed:.5f})")
+comm.barrier()
+
+
+
+for _ in range(2):
+   x = torch.ones([1024, 1024]).to(device, non_blocking=True)
+   # print(x)
+   t5 = datetime.datetime.now() 
+   dist.reduce(x, dst=0, op=dist.ReduceOp.SUM)  # Added Extra op
+   t6 = datetime.datetime.now()
+   elapsed = (t6 - t5).total_seconds()
+   print(f"[{dist_my_rank}] Python: Elapsed time in each iter for reduce : {elapsed:.5f})")
+   
+comm.barrier()
+for _ in range(2):
+   x = torch.ones(4).to(device, non_blocking=True)
+   y = [torch.zeros(4).to(device, non_blocking=True) for _ in range(world_size)]
+   # print(x)
+   t5 = datetime.datetime.now() 
+   dist.all_gather(y, x)
+   t6 = datetime.datetime.now()
+   elapsed = (t6 - t5).total_seconds()
+   print(f"[{dist_my_rank}] Python: Elapsed time in each iter for all_gather : {elapsed:.5f})")
+
+
+comm.barrier()
+for _ in range(2):
+   x = torch.ones(world_size).to(device, non_blocking=True)
+   y = torch.zeros(1).to(device, non_blocking=True)
+   # print(x)
+   t5 = datetime.datetime.now() 
+   dist.reduce_scatter_tensor(y, x, op=dist.ReduceOp.SUM)
+   t6 = datetime.datetime.now()
+   elapsed = (t6 - t5).total_seconds()
+   print(f"[{dist_my_rank}] Python: Elapsed time in each iter for reduce_scatter : {elapsed:.5f})")
+
+   
+comm.barrier()
+for _ in range(2):
+   x_in = torch.ones(1024).to(device, non_blocking=True)
+   x_out = torch.ones(1024).to(device, non_blocking=True)
+   t5 = datetime.datetime.now()       
+   dist.all_to_all_single(x_out, x_in)
+   t6 = datetime.datetime.now()
+   print(f"[{dist_my_rank}] Python: Elapsed time in each iter for all_to_all : {elapsed:.5f})")
+
