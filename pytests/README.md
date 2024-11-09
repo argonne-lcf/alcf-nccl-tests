@@ -82,18 +82,11 @@ We find that anytime when we have a set of NCCL environment, it will fail going 
 export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
+export NCCL_NET="AWS Libfabric"
+export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/soft/libraries/hwloc/lib/:$LD_LIBRARY_PATH
 ```
 
-Now we would like see what are the problem for each of the three NCC environment variables [let us designated as (a-c)]
-
-| Setup  |   (0-a)  |  (0-b)  |  (0-c)  | (0-ab) | (0-ac) | (0-bc) |
-| ------ |  ------- | ------- | ------- | ------ |  ----- | ------ |
-| 1x4    |    1     |    1    |    1    |    1   |    1   |    1   |
-| 2x1    |    1     |    1    |    1    |    1   |    1   |    1   |
-| 2x2    |    0     |    1    |    1    |    0   |    0   |    1   |
-| 2x4    |    0     |    1    |    1    |    0   |    0   |    1   |
-
-We found that the true problem is from 
 ```bash
 export NCCL_NET_GDR_LEVEL=PHB
 ```
