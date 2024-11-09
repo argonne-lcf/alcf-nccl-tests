@@ -1,0 +1,49 @@
+DDP: I am worker 5 of 8. My local rank is 1
+DDP: I am worker 6 of 8. My local rank is 2
+DDP: I am worker 4 of 8. My local rank is 0
+DDP: I am worker 0 of 8. My local rank is 0
+=> Dummy data is used!
+start training
+DDP: I am worker 7 of 8. My local rank is 3
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+DDP: I am worker 1 of 8. My local rank is 1
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+DDP: I am worker 2 of 8. My local rank is 2
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+DDP: I am worker 3 of 8. My local rank is 3
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+Throughput: 4790.659 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.588 s, Average batch time: 0.036 s, First batch time: 0.943 s
+start training
+Throughput: 4716.187 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.923 s, Average batch time: 0.029 s, First batch time: 0.236 s
+start training
+Throughput: 4458.143 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.073 s, Average batch time: 0.030 s, First batch time: 0.230 s
+start training
+Throughput: 4678.194 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.940 s, Average batch time: 0.029 s, First batch time: 0.231 s
+start training
+Throughput: 4701.096 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.926 s, Average batch time: 0.029 s, First batch time: 0.231 s
+start training
+Throughput: 4687.943 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.941 s, Average batch time: 0.029 s, First batch time: 0.238 s
+start training
+Throughput: 4741.813 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.901 s, Average batch time: 0.029 s, First batch time: 0.228 s
+start training
+Throughput: 4694.582 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.932 s, Average batch time: 0.029 s, First batch time: 0.233 s
+start training
+Throughput: 4749.884 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.908 s, Average batch time: 0.029 s, First batch time: 0.240 s
+start training
+Throughput: 4673.503 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.944 s, Average batch time: 0.029 s, First batch time: 0.232 s
+Total time: 30.53652811050415
+
+Test set: Average loss: -0.0014, Accuracy: 6/50000 (0%)
+

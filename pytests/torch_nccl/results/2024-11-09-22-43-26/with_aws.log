@@ -1,0 +1,345 @@
+Running on single node
+I am 0 of 4: 0 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 1 of 4: 1 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 2 of 4: 2 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 3 of 4: 3 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+import time: 1.50866400
+torch init time : 1.62814100
+2.3.0
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/__init__.py
+(2, 20, 5)
+dist_my_rank = 0  dist_world_size = 4
+[0-0] cuda:0
+[0] Python: Elapsed time in each iter for broadcast: 2.64770500)
+[0] Python: Elapsed time in each iter for broadcast: 0.00011800)
+[0] Python: Elapsed time in each iter for broadcast: 0.00007200)
+[0] Python: Elapsed time in each iter for broadcast: 0.00006900)
+[0] Python: Elapsed time in each iter for broadcast: 0.00006700)
+[0] Python: Elapsed time in each iter for broadcast: 0.00006000)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005100)
+[0] Python: Elapsed time in each iter for broadcast: 0.00015500)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005800)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005600)
+Average time for broadcast (exclude first iter): 0.00007844 
+[0] Python: Elapsed time in each iter for all_reduce : 0.00200500)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00007200)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006200)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006200)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005800)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005900)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005800)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006500)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005700)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006100)
+Average time for all_reduce (exclude first iter): 0.00006156 
+[0] Python: Elapsed time in each iter for reduce : 0.00008300)
+[0] Python: Elapsed time in each iter for reduce : 0.00007000)
+[0] Python: Elapsed time in each iter for reduce : 0.00005800)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00005700)
+[0] Python: Eldist_my_rank = 1  dist_world_size = 4
+[1-1] cuda:1
+apsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00005600)
+[0] Python: Elapsed time in each iter for reduce : 0.00008100)
+[0] Python: Elapsed time in each iter for reduce : 0.00007200)
+Average time for all_reduce (exclude first iter): 0.00006211 
+[0] Python: Elapsed time in each iter for all_gather : 0.00023400)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010800)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010200)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010200)
+[0] Python: Elapsed time in each iter for all_gather : 0.00009900)
+[0] Python: Elapsed time in each iter for all_gather : 0.00009900)
+[0] Python: Elapsed time in each iter for all_gather : 0.00009800)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010000)
+[0] Python: Elapsed time in each iter for all_gather : 0.00009600)
+[0] Python: Elapsed time in each iter for all_gather : 0.00009500)
+Average time for all_gather (exclude first iter): 0.00006211 
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00006300)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004600)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004400)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004300)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004300)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00005300)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004300)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+Average time for reduce_scatter (exclude first iter): 0.00004422 
+[0] Python: Elapsed time in each iter for all_to_all : 0.40499800)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00005700)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004800)
+[0] Python: Elapsed time in each iter dist_my_rank = 2  dist_world_size = 4
+[2-2] cuda:2
+dist_my_rank = 3  dist_world_size = 4
+[3-3] cuda:3
+for all_to_all : 0.00004700)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004800)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004800)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004700)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004800)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004700)
+Average time for all_to_all (exclude first iter): 0.00004878 
+-------------------------------
+Running on two nodes with 1 rank per node
+I am 1 of 2: 0 on x3200c0s1b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 0 of 2: 0 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+dist_my_rank = 1  dist_world_size = 2
+[1-0] cuda:0
+import time: 3.36392700
+torch init time : 0.92350300
+2.3.0
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/__init__.py
+(2, 20, 5)
+dist_my_rank = 0  dist_world_size = 2
+[0-0] cuda:0
+[0] Python: Elapsed time in each iter for broadcast: 0.25763800)
+[0] Python: Elapsed time in each iter for broadcast: 0.00007000)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005000)
+[0] Python: Elapsed time in each iter for broadcast: 0.00014400)
+[0] Python: Elapsed time in each iter for broadcast: 0.00013800)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005200)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005100)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005400)
+[0] Python: Elapsed time in each iter for broadcast: 0.00004900)
+[0] Python: Elapsed time in each iter for broadcast: 0.00004600)
+Average time for broadcast (exclude first iter): 0.00007267 
+[0] Python: Elapsed time in each iter for all_reduce : 0.00075000)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006600)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005600)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005700)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005700)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005800)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005600)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005900)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005600)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005700)
+Average time for all_reduce (exclude first iter): 0.00005800 
+[0] Python: Elapsed time in each iter for reduce : 0.00007000)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00005400)
+[0] Python: Elapsed time in each iter for reduce : 0.00005300)
+[0] Python: Elapsed time in each iter for reduce : 0.00006600)
+[0] Python: Elapsed time in each iter for reduce : 0.00010100)
+[0] Python: Elapsed time in each iter for reduce : 0.00006100)
+[0] Python: Elapsed time in each iter for reduce : 0.00006000)
+[0] Python: Elapsed time in each iter for reduce : 0.00006700)
+[0] Python: Elapsed time in each iter for reduce : 0.00008100)
+Average time for all_reduce (exclude first iter): 0.00006644 
+[0] Python: Elapsed time in each iter for all_gather : 0.00025900)
+[0] Python: Elapsed time in each iter for all_gather : 0.00009500)
+[0] Python: Elapsed time in each iter for all_gather : 0.00008900)
+[0] Python: Elapsed time in each iter for all_gather : 0.00009400)
+[0] Python: Elapsed time in each iter for all_gather : 0.00008500)
+[0] Python: Elapsed time in each iter for all_gather : 0.00008600)
+[0] Python: Elapsed time in each iter for all_gather : 0.00008400)
+[0] Python: Elapsed time in each iter for all_gather : 0.00008600)
+[0] Python: Elapsed time in each iter for all_gather : 0.00008400)
+[0] Python: Elapsed time in each iter for all_gather : 0.00008200)
+Average time for all_gather (exclude first iter): 0.00006644 
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00006800)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004800)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004600)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004700)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004500)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004500)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004400)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004600)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004400)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004300)
+Average time for reduce_scatter (exclude first iter): 0.00004533 
+[0] Python: Elapsed time in each iter for all_to_all : 0.01095300)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00006200)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004700)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004700)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004600)
+Average time for all_to_all (exclude first iter): 0.00004967 
+-------------------------------
+Running on two nodes with 2 ranks per node
+I am 0 of 4: 0 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 1 of 4: 1 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 2 of 4: 0 on x3200c0s1b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 3 of 4: 1 on x3200c0s1b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+import time: 3.24932300
+torch init time : 0.03674200
+2.3.0
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/__init__.py
+(2, 20, 5)
+dist_my_rank = 0  dist_world_size = 4
+[0-0] cuda:0
+[0] Python: Elapsed time in each iter for broadcast: 0.88451500)
+[0] Python: Elapsed time in each iter for broadcast: 0.00006100)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005400)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005400)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005500)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005300)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005200)
+[0] Python: Elapsed time in each iter for broadcast: 0.00006500)
+[0] Python: Elapsed time in each iter for broadcast: 0.00004900)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005700)
+Average time for broadcast (exclude first iter): 0.00005556 
+[0] Python: Elapsed time in each iter for all_reduce : 0.00109700)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00007300)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006200)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005700)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005800)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005800)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006100)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006200)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005800)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005700)
+Average time for all_reduce (exclude first iter): 0.00006067 
+[0] Python: Elapsed time in each iter for reduce : 0.00007400)
+[0] Python: Elapsed time in each iter for reduce : 0.00005700)
+[0] Python: Elapsed time in each iter for reduce : 0.00005600)
+[0] Python: Elapsed time in each iter for reduce : 0.00005600)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+[0] Python: Eldist_my_rank = 2  dist_world_size = 4
+[2-0] cuda:0
+dist_my_rank = 1  dist_world_size = 4
+[1-1] cuda:1
+dist_my_rank = 3  dist_world_size = 4
+[3-1] cuda:1
+apsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00005800)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+Average time for all_reduce (exclude first iter): 0.00005578 
+[0] Python: Elapsed time in each iter for all_gather : 0.00025200)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010800)
+[0] Python: Elapsed time in each iter for all_gather : 0.00011000)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010500)
+[0] Python: Elapsed time in each iter for all_gather : 0.00009900)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010100)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010300)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010500)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010100)
+[0] Python: Elapsed time in each iter for all_gather : 0.00010000)
+Average time for all_gather (exclude first iter): 0.00005578 
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00006700)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004800)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004400)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004300)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004400)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004300)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004800)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004600)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+Average time for reduce_scatter (exclude first iter): 0.00004444 
+[0] Python: Elapsed time in each iter for all_to_all : 0.03292100)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00005700)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004700)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004800)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004700)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004600)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004700)
+Average time for all_to_all (exclude first iter): 0.00004878 
+-------------------------------
+Running on two nodes with 4 ranks per node
+I am 1 of 8: 1 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 0 of 8: 0 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 3 of 8: 3 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 2 of 8: 2 on x3200c0s19b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 5 of 8: 1 on x3200c0s1b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 7 of 8: 3 on x3200c0s1b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 4 of 8: 0 on x3200c0s1b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+I am 6 of 8: 2 on x3200c0s1b1n0 - MASTER_ADDR=x3200c0s19b1n0.hsn.cm.sirius.alcf.anl.gov
+dist_my_rank = 3  dist_world_size = 8
+[3-3] cuda:3
+import time: 3.27859700
+torch init time : 0.02528100
+2.3.0
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/__init__.py
+(2, 20, 5)
+dist_my_rank = 0  dist_world_size = 8
+[0-0] cuda:0
+[0] Python: Elapsed time in each iter for broadcast: 1.95059800)
+[0] Python: Elapsed time in each iter for broadcast: 0.00011700)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005400)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005100)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005900)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005100)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005000)
+[0] Python: Elapsed time in each iter for broadcast: 0.00005100)
+[0] Python: Elapsed time in each iter for broadcast: 0.00011300)
+[0] Python: Elapsed time in each iter for broadcast: 0.00007800)
+Average time for broadcast (exclude first iter): 0.00006933 
+[0] Python: Elapsed time in each iter for all_reduce : 0.00202000)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00011500)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005300)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005400)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005300)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005200)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005300)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00005300)
+[0] Python: Elapsed time in each iter for all_reduce : 0.00006000)
+Average time for all_reduce (exclude first iter): 0.00006089 
+[0] Python: Elapsed time in each iter for reduce : 0.00007300)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00008200)
+[0] Python: Elapsed time in each iter for reduce : 0.00006600)
+[0] Python: Elapsed time in each iter for reduce : 0.00005700)
+[0] Python: Elapsed time in each iter for reduce : 0.00005800)
+[0] Python: Eldist_my_rank = 5  dist_world_size = 8
+[5-1] cuda:1
+dist_my_rank = 1  dist_world_size = 8
+[1-1] cuda:1
+dist_my_rank = 4  dist_world_size = 8
+[4-0] cuda:0
+apsed time in each iter for reduce : 0.00005600)
+[0] Python: Elapsed time in each iter for reduce : 0.00005700)
+[0] Python: Elapsed time in each iter for reduce : 0.00005500)
+[0] Python: Elapsed time in each iter for reduce : 0.00005200)
+Average time for all_reduce (exclude first iter): 0.00005978 
+[0] Python: Elapsed time in each iter for all_gather : 0.00026500)
+[0] Python: Elapsed time in each iter for all_gather : 0.00013200)
+[0] Python: Elapsed time in each iter for all_gather : 0.00012400)
+[0] Python: Elapsed time in each iter for all_gather : 0.00013500)
+[0] Python: Elapsed time in each iter for all_gather : 0.00012200)
+[0] Python: Elapsed time in each iter for all_gather : 0.00012200)
+[0] Python: Elapsed time in each iter for all_gather : 0.00012600)
+[0] Python: Elapsed time in each iter for all_gather : 0.00012800)
+[0] Python: Elapsed time in each iter for all_gather : 0.00012500)
+[0] Python: Elapsed time in each iter for all_gather : 0.00012300)
+Average time for all_gather (exclude first iter): 0.00005978 
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00006500)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004500)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004300)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004100)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004400)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004200)
+[0] Python: Elapsed time in each iter for reduce_scatter : 0.00004000)
+Average time for reduce_scatter (exclude first iter): 0.00004233 
+[0] Python: Elapsed time in each iter for all_to_all : 0.14750300)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00006200)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00005200)
+[0] Python: Elapsed time in each iter dist_my_rank = 6  dist_world_size = 8
+[6-2] cuda:2
+dist_my_rank = 2  dist_world_size = 8
+[2-2] cuda:2
+dist_my_rank = 7  dist_world_size = 8
+[7-3] cuda:3
+for all_to_all : 0.00005000)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00005100)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00005100)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00005000)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00005100)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00005300)
+[0] Python: Elapsed time in each iter for all_to_all : 0.00004900)
+Average time for all_to_all (exclude first iter): 0.00005211 

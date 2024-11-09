@@ -24,10 +24,12 @@ function run_jobs() {
 }
 export run_jobs
 
-run_jobs | tee -a without_aws.log
+OUTPUT=results/$(date +'%Y-%m-%d-%H-%M-%S')
+mkdir -p $OUTPUT
+run_jobs >& $OUTPUT/without_aws.log
 
 echo "Run with AWS"
 cd $PBS_O_WORKDIR
 source ../aws.sh
-run_jobs | tee -a with_aws.log
+run_jobs >& $OUTPUT/with_aws.log
 
