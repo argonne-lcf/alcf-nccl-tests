@@ -1,0 +1,359 @@
+x3005c0s25b1n0:24012:24012 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3005c0s25b1n0:24012:24012 [0] NCCL INFO Bootstrap : Using hsn1:10.201.1.227<0>
+x3005c0s25b1n0:24012:24012 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3005c0s25b1n0:24012:24012 [0] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3005c0s25b1n0:24012:24012 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3005c0s25b1n0:24012:24012 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3005c0s25b1n0:24012:24012 [0] NCCL INFO cudaDriverVersion 12020
+NCCL version 2.20.5+cuda12.4
+x3005c0s25b1n0:24013:24013 [1] NCCL INFO cudaDriverVersion 12020
+x3005c0s25b1n0:24013:24013 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3005c0s25b1n0:24013:24013 [1] NCCL INFO Bootstrap : Using hsn1:10.201.1.227<0>
+x3005c0s25b1n0:24013:24013 [1] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3005c0s25b1n0:24013:24013 [1] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3005c0s25b1n0:24013:24013 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3005c0s25b1n0:24013:24013 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3005c0s25b1n0:24013:24116 [1] 117.724290 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3005c0s25b1n0:24013:24116 [1] 117.732806 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3005c0s25b1n0:24013:24116 [1] 117.734249 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3005c0s25b1n0:24013:24116 [1] 117.735311 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Using non-device net plugin version 0
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Using network AWS Libfabric
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO DMA-BUF is available on GPU device 1
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO comm 0x5592ca292870 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x4d08e928a4a97e3c - Init START
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Setting affinity for GPU 1 to ff0000
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO NVLS multicast support is not available on dev 1
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO comm 0x5592ca292870 rank 1 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Trees [0] 2/5/-1->1->-1 [1] -1/-1/-1->1->0 [2] 2/-1/-1->1->5 [3] -1/-1/-1->1->0
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO P2P Chunksize set to 131072
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 00/0 : 5[1] -> 1[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 02/0 : 5[1] -> 1[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 01/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3005c0s25b1n0:24013:24119 [1] 898.458622 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24013:24119 [1] 900.111199 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3005c0s25b1n0:24013:24119 [1] 900.118954 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24013:24119 [1] 906.596203 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24013:24119 [1] 908.325233 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3005c0s25b1n0:24013:24119 [1] 908.332426 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Connected all rings
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24013:24116 [1] NCCL INFO Channel 00/0 : 1[1] -> 5[1] [senx3005c0s31b0n0:309935:309935 [1] NCCL INFO cudaDriverVersion 12020
+x3005c0s31b0n0:309935:309935 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3005c0s31b0n0:309935:309935 [1] NCCL INFO Bootstrap : Using hsn1:10.201.1.219<0>
+x3005c0s31b0n0:309935:309935 [1] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3005c0s31b0n0:309935:309935 [1] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3005c0s31b0n0:309935:309935 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3005c0s31b0n0:309935:309935 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3005c0s31b0n0:309935:310032 [1] 118.559117 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3005c0s31b0n0:309935:310032 [1] 118.579650 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3005c0s31b0n0:309935:310032 [1] 118.582095 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3005c0s31b0n0:309935:310032 [1] 118.583980 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Using non-device net plugin version 0
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Using network AWS Libfabric
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO DMA-BUF is available on GPU device 1
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO comm 0x5610bbe9a3f0 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x4d08e928a4a97e3c - Init START
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Setting affinity for GPU 1 to ff0000
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO NVLS multicast support is not available on dev 1
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO comm 0x5610bbe9a3f0 rank 5 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Trees [0] 6/-1/-1->5->1 [1] -1/-1/-1->5->4 [2] 6/1/-1->5->-1 [3] -1/-1/-1->5->4
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO P2P Chunksize set to 131072
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Channel 01/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Channel 00/0 : 5[1] -> 1[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Channel 02/0 : 5[1] -> 1[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Channel 01/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Channel 03/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+x3005c0s31b0n0:309935:310035 [1] 700.639238 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s31b0n0:309935:310035 [1] 704.953471 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3005c0s31b0n0:309935:310035 [1] 704.960525 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s31b0n0:309935:310035 [1] 709.573398 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3005c0s31b0n0:309935:310035 [1] 709.580033 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s31b0n0:309935:310035 [1] 713.064761 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Connected all rings
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Channel 00/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+x3005c0s31b0n0:309935:310032 [1] NCCL INFO Channel 02/0 : 5[1] -> 6[2] via P2P/CUMEM/d]rex3005c0s31b0n0:309937:309937 [3] NCCL INFO cudaDriverVersion 12020
+x3005c0s31b0n0:309937:309937 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3005c0s31b0n0:309937:309937 [3] NCCL INFO Bootstrap : Using hsn1:10.201.1.219<0>
+x3005c0s31b0n0:309937:309937 [3] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3005c0s31b0n0:309937:309937 [3] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3005c0s31b0n0:309937:309937 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3005c0s31b0n0:309937:309937 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3005c0s31b0n0:309937:310033 [3] 103.929683 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3005c0s31b0n0:309937:310033 [3] 103.940439 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3005c0s31b0n0:309937:310033 [3] 103.942813 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3005c0s31b0n0:309937:310033 [3] 103.944699 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Using non-device net plugin version 0
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Using network AWS Libfabric
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO DMA-BUF is available on GPU device 3
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO comm 0x5589c8ff89f0 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x4d08e928a4a97e3c - Init START
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO NCCL_CROSS_NIC set by environmx3005c0s25b1n0:24015:24015 [3] NCCL INFO cudaDriverVersion 12020
+x3005c0s25b1n0:24015:24015 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3005c0s25b1n0:24015:24015 [3] NCCL INFO Bootstrap : Using hsn1:10.201.1.227<0>
+x3005c0s25b1n0:24015:24015 [3] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3005c0s25b1n0:24015:24015 [3] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3005c0s25b1n0:24015:24015 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3005c0s25b1n0:24015:24015 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3005c0s25b1n0:24015:24114 [3] 97.619382 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3005c0s25b1n0:24015:24114 [3] 97.628138 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3005c0s25b1n0:24015:24114 [3] 97.629461 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3005c0s25b1n0:24015:24114 [3] 97.630463 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Using non-device net plugin version 0
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Using network AWS Libfabric
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO DMA-BUF is available on GPU device 3
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO comm 0x55f615c24970 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x4d08e928a4a97e3c - Init START
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3005c0s25b1n0:24015:24114 [3] NCCent to 1.
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO comm 0x5589c8ff89f0 rank 7 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Trees [0] 4/-1/-1->7->6 [1] 6/-1/-1->7->3 [2] 4/-1/-1->7->6 [3] 6/3/-1->7->-1
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO P2P Chunksize set to 131072
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Channel 00/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Channel 02/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Channel 03/0 : 7[3] -> 3[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Channel 00/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Channel 02/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3005c0s31b0n0:309937:310036 [3] 680.864322 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s31b0n0:309937:310036 [3] 685.726110 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3005c0s31b0n0:309937:310036 [3] 685.734211 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s31b0n0:309937:310036 [3] 693.739762 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3005c0s31b0n0:309937:310036 [3] 693.747864 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s31b0n0:309937:310036 [3] 701.013237 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Connected all rings
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s31b0n0:309937:310033 [3] NCCL INFO Channel 03/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s31b0n0:309937:310033 [3] NCL INFO comm 0x55f615c24970 rank 3 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Trees [0] 0/-1/-1->3->2 [1] 2/7/-1->3->-1 [2] 0/-1/-1->3->2 [3] 2/-1/-1->3->7
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO P2P Chunksize set to 131072
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 03/0 : 7[3] -> 3[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 00/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 02/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24015:24117 [3] 911.321796 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3005c0s25b1n0:24015:24117 [3] 911.333769 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24015:24117 [3] 922.812661 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24015:24117 [3] 924.146310 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24015:24117 [3] 925.855123 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3005c0s25b1n0:24015:24117 [3] 925.861675 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Connected all rings
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 03/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+x3005c0s25b1n0:24015:24114 [3] NCDDP: I am worker 2 of 8. My local rank is 2
+DDP: I am worker 0 of 8. My local rank is 0
+=> Dummy data is used!
+start training
+DDP: I am worker 3 of 8. My local rank is 3
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3005c0s25b1n0:24012:24113 [0] 110.004619 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3005c0s25b1n0:24012:24113 [0] 110.012875 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3005c0s25b1n0:24012:24113 [0] 110.014318 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3005c0s25b1n0:24012:24113 [0] 110.015430 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Using non-device net plugin version 0
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Using network AWS Libfabric
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO DMA-BUF is available on GPU device 0
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO comm 0x5573aa512b30 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x4d08e928a4a97e3c - Init START
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO NVLS multicast support is not available on dev 0
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO comm 0x5573aa512b30 rank 0 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 00/04 :    0   2   3   7   6   4   5   1
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 01/04 :    0   1   5   4   6   7   3   2
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 02/04 :    0   2   3   7   6   4   5   1
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 03/04 :    0   1   5   4   6   7   3   2
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Trees [0] -1/-1/-1->0->3 [1] 1/-1/-1->0->2 [2] -1/-1/-1->0->3 [3] 1/-1/-1->0->2
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO P2P Chunksize set to 131072
+x3005c0s25b1n0:24012:24113 [0] NC[rank0]:[E ProcessGroupNCCL.cpp:563] [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120011 milliseconds before timing out.
+CL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Connected all rings
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 00/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Channel 02/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO Connected all trees
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3005c0s25b1n0:24012:24113 [0] NCCL INFO comm 0x5573aa512b30 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x4d08e928a4a97e3c - Init COMPLETE
+[rank0]:[E ProcessGroupNCCL.cpp:1537] [PG 0 Rank 0] Timeout at NCCL work: 3, last enqueued NCCL work: 6, last completed NCCL work: 2.
+[rank0]:[E ProcessGroupNCCL.cpp:577] [Rank 0] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank0]:[E ProcessGroupNCCL.cpp:583] [Rank 0] To avoid data inconsistency, we are taking the entire process down.
+[rank0]:[E ProcessGroupNCCL.cpp:1414] [PG 0 Rank 0] Process group watchdog thread terminated with exception: [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120011 milliseconds before timing out.
+Exception raised from checkTimeout at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:565 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x14e8f639d6f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x14e8a27804a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1d1 (0x14e8a2759b61 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::watchdogHandler() + 0x1e5 (0x14e8a275a035 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0xfd (0x14e8a275ae6d in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0xd3e95 (0x14e9094f0e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #6: <unknown function> + 0xa6ea (0x14e90a7c36ea in /lib64/libpthread.so.0)
+frame #7: clone + 0x41 (0x14e90a58350f in /lib64/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG 0 Rank 0] Process group watchdog thread terminated with exception: [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120011 milliseconds before timing out.
+Exception raised from checkTimeout at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:565 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x14e8f639d6f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x14e8a27804a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1d1 (0x14e8a2759b61 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::watchdogHandler() + 0x1e5 (0x14e8a275a035 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0xfd (0x14e8a275ae6d in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0xd3e95 (0x14e9094f0e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #6: <unknown function> + 0xa6ea (0x14e90a7c36ea in /lib64/libpthread.so.0)
+frame #7: clone + 0x41 (0x14e90a58350f in /lib64/libc.so.6)
+
+Exception raised from ncclCommWatchdog at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1418 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x14e8f639d6f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x14e8a27804a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: <unknown function> + 0xcf2d40 (0x14e8a241ad40 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: <unknown function> + 0xd3e95 (0x14e9094f0e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #4: <unknown function> + 0xa6ea (0x14e90a7c36ea in /lib64/libpthread.so.0)
+frame #5: clone + 0x41 (0x14e90a58350f in /lib64/libc.so.6)
+
+CL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3005c0s25b1n0:24015:24117 [3] 994.138792 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24015:24117 [3] 1001.661230 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO Connected all trees
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3005c0s25b1n0:24015:24114 [3] NCCL INFO comm 0x55f615c24970 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x4d08e928a4a97e3c - Init COMPLETE
+[rank3]:[E ProcessGroupNCCL.cpp:563] [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120041 milliseconds before timing out.
+[rank3]:[E ProcessGroupNCCL.cpp:1537] [PG 0 Rank 3] Timeout at NCCL work: 3, last enqueued NCCL work: 6, last completed NCCL work: 2.
+[rank3]:[E ProcessGroupNCCL.cpp:577] [Rank 3] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank3]:[E ProcessGroupNCCL.cpp:583] [Rank 3] To avoid data inconsistency, we are taking the entire process down.
+[rank3]:[E ProcessGroupNCCL.cpp:1414] [PG 0 Rank 3] Process group watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120041 milliseconds before timing out.
+Exception raised from checkTimeout at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:565 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x14f910bd66f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x14f8dc7804a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1d1 (0x14f8dc759b61 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::watchdogHandler() + 0x1e5 (0x14f8dc75a035 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0xfd (0x14f8dc75ae6d in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0xd3e95 (0x14f91f084e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #6: <unknown function> + 0xa6ea (0x14f9244386ea in /lib64/libpthread.so.0)
+frame #7: clone + 0x41 (0x14f9241f850f in /lib64/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG 0 Rank 3] Process group watchdog thread terminated with exception: [Rank 3] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120041 milliseconds before timing out.
+Exception raised from checkTimeout at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:565 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x14f910bd66f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x14f8dc7804a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1d1 (0x14f8dc759b61 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::watchdogHandler() + 0x1e5 (0x14f8dc75a035 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0xfd (0x14f8dc75ae6d in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0xd3e95 (0x14f91f084e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #6: <unknown function> + 0xa6ea (0x14f9244386ea in /lib64/libpthread.so.0)
+frame #7: clone + 0x41 (0x14f9241f850f in /lib64/libc.so.6)
+
+Exception raised from ncclCommWatchdog at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1418 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x14f910bd66f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x14f8dc7804a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: <unknown function> + 0xcf2d40 (0x14f8dc41ad40 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: <unknown function> + 0xd3e95 (0x14f91f084e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #4: <unknown function> + 0xa6ea (0x14f9244386ea in /lib64/libpthread.so.0)
+frame #5: clone + 0x41 (0x14f9241f850f in /lib64/libc.so.6)
+
+x3005c0s25b1n0:24014:24014 [2] NCCL INFO cudaDriverVersion 12020
+x3005c0s25b1n0:24014:24014 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3005c0s25b1n0:24014:24014 [2] NCCL INFO Bootstrap : Using hsn1:10.201.1.227<0>
+x3005c0s25b1n0:24014:24014 [2] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3005c0s25b1n0:24014:24014 [2] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3005c0s25b1n0:24014:24014 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3005c0s25b1n0:24014:24014 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3005c0s25b1n0:24014:24115 [2] 99.061716 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3005c0s25b1n0:24014:24115 [2] 99.069430 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3005c0s25b1n0:24014:24115 [2] 99.070663 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3005c0s25b1n0:24014:24115 [2] 99.071735 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Using non-device net plugin version 0
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Using network AWS Libfabric
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO DMA-BUF is available on GPU device 2
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO comm 0x556c07d048b0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x4d08e928a4a97e3c - Init START
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Setting affinity for GPU 2 to ff00,00000000
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO NVLS multicast support is not available on dev 2
+x3005c0s25b1n0:24014:24115 [2][rank2]:[E ProcessGroupNCCL.cpp:563] [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120059 milliseconds before timing out.
+ NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO comm 0x556c07d048b0 rank 2 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 0/-1/-1->2->3 [2] 3/-1/-1->2->1 [3] 0/-1/-1->2->3
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO P2P Chunksize set to 131072
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Channel 03/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Connected all rings
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO Connected all trees
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3005c0s25b1n0:24014:24115 [2] NCCL INFO comm 0x556c07d048b0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x4d08e928a4a97e3c - Init COMPLETE
+[rank2]:[E ProcessGroupNCCL.cpp:1537] [PG 0 Rank 2] Timeout at NCCL work: 3, last enqueued NCCL work: 6, last completed NCCL work: 2.
+[rank2]:[E ProcessGroupNCCL.cpp:577] [Rank 2] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank2]:[E ProcessGroupNCCL.cpp:583] [Rank 2] To avoid data inconsistency, we are taking the entire process down.
+[rank2]:[E ProcessGroupNCCL.cpp:1414] [PG 0 Rank 2] Process group watchdog thread terminated with exception: [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120059 milliseconds before timing out.
+Exception raised from checkTimeout at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:565 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x153aac9036f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x153a899db4a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1d1 (0x153a899b4b61 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::watchdogHandler() + 0x1e5 (0x153a899b5035 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0xfd (0x153a899b5e6d in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0xd3e95 (0x153ac8084e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #6: <unknown function> + 0xa6ea (0x153acd3ed6ea in /lib64/libpthread.so.0)
+frame #7: clone + 0x41 (0x153acd1ad50f in /lib64/libc.so.6)
+
+terminate called after throwing an instance of 'c10::DistBackendError'
+  what():  [PG 0 Rank 2] Process group watchdog thread terminated with exception: [Rank 2] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=3, OpType=BROADCAST, NumelIn=25610152, NumelOut=25610152, Timeout(ms)=120000) ran for 120059 milliseconds before timing out.
+Exception raised from checkTimeout at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:565 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x153aac9036f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x153a899db4a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x1d1 (0x153a899b4b61 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::watchdogHandler() + 0x1e5 (0x153a899b5035 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0xfd (0x153a899b5e6d in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0xd3e95 (0x153ac8084e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #6: <unknown function> + 0xa6ea (0x153acd3ed6ea in /lib64/libpthread.so.0)
+frame #7: clone + 0x41 (0x153acd1ad50f in /lib64/libc.so.6)
+
+Exception raised from ncclCommWatchdog at /soft/applications/conda/2024-04-29/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:1418 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xa9 (0x153aac9036f9 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x10584a1 (0x153a899db4a1 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: <unknown function> + 0xcf2d40 (0x153a89675d40 in /soft/applications/conda/2024-04-29/mconda3/lib/python3.11/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: <unknown function> + 0xd3e95 (0x153ac8084e95 in /soft/applications/conda/2024-04-29/mconda3/lib/libstdc++.so.6)
+frame #4: <unknown function> + 0xa6ea (0x153acd3ed6ea in /lib64/libpthread.so.0)
+frame #5: clone + 0x41 (0x153acd1ad50f in /lib64/libc.so.6)
+
+x3005c0s25b1n0.hsn.cm.polaris.alcf.anl.gov: rank 2 died from signal 6 and dumped core
+x3005c0s25b1n0.hsn.cm.polaris.alcf.anl.gov: rank 1 died from signal 15
