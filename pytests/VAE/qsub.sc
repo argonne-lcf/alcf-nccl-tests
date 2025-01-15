@@ -26,8 +26,9 @@ echo "Run without AWS"
 mpiexec -np 8 --ppn 4 --cpu-bind depth -d 16 python ./VAE_with_LSTM.py >& $OUTPUT/without_aws.log
 
 echo "Run with AWS"
-source ../aws.sh
+source ../aws_2025.01.15.sh
 export NCCL_DEBUG=TRACE
+env >& $OUTPUT/env_aws.dat
 mpiexec -np 8 --ppn 4 --cpu-bind depth -d 16 python ./VAE_with_LSTM.py >& $OUTPUT/with_aws.log
 
 

@@ -373,7 +373,7 @@ def main():
         if args.save_model:
             torch.save(model.state_dict(), "mnist_cnn.pt")
         
-        test(model, device, val_loader)
+        #test(model, device, val_loader)
 
     if args.profile:
         from torch.profiler import profile, record_function, ProfilerActivity
