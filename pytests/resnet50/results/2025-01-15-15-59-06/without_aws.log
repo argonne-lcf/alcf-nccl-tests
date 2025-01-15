@@ -1,0 +1,399 @@
+x3207c0s25b0n0:3784612:3784612 [0] NCCL INFO Bootstrap : Using bond0:10.140.56.238<0>
+x3207c0s25b0n0:3784612:3784612 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b0n0:3784612:3784612 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b0n0:3784612:3784612 [0] NCCL INFO cudaDriverVersion 12020
+NCCL version 2.20.5+cuda12.4
+x3207c0s25b0n0:3784613:3784613 [1] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b0n0:3784613:3784613 [1] NCCL INFO Bootstrap : Using bond0:10.140.56.238<0>
+x3207c0s25b0n0:3784613:3784613 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b0n0:3784613:3784613 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Using Libfabric version 1.15
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Using CUDA driver version 12020
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Using transport protocol SENDRECV
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Using network AWS Libfabric
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO DMA-BUF is available on GPU device 1
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO comm 0x562002d37730 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x2c6663e44b30c3fc - Init START
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Setting affinity for GPU 1 to ff0000
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO NVLS multicast support is not available on dev 1
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO comm 0x562002d37730 rank 1 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Trees [0] 2/5/-1->1->-1 [1] -1/-1/-1->1->0 [2] 2/-1/-1->1->5 [3] -1/-1/-1->1->0
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b0n0:3784613:3784719 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 00/0 : 5[1] -> 1[1] [receive] via NET/AWS Libfabric/3
+x3207c0s25b0n0:3784613:3784719 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 02/0 : 5[1] -> 1[1] [receive] via NET/AWS Libfabric/3
+x3207c0s25b0n0:3784613:3784719 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 01/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3
+x3207c0s25b0n0:3784613:3784719 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Connected all rings
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784613:3784719 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 00/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3
+x3207c0s25b0n0:3784613:3784719 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 02/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2x3207c0s25b0n0:3784616:3784616 [3] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b0n0:3784616:3784616 [3] NCCL INFO Bootstrap : Using bond0:10.140.56.238<0>
+x3207c0s25b0n0:3784616:3784616 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b0n0:3784616:3784616 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Using Libfabric version 1.15
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Using CUDA driver version 12020
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Using transport protocol SENDRECV
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Using network AWS Libfabric
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO DMA-BUF is available on GPU device 3
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO comm 0x562adc905370 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x2c6663e44b30c3fc - Init START
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO comm 0x562adc905370 rank 3 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Trees [0] 0/-1/-1->3->2 [1] 2/7/-1->3->-1 [2] 0/-1/-1->3->2 [3] 2/-1/-1->3->7
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b0n0:3784616:3784720 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [receive] via NET/AWS Libfabric/1
+x3207c0s25b0n0:3784616:3784720 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 03/0 : 7[3] -> 3[3] [receive] via NET/AWS Libfabric/1
+x3207c0s25b0n0:3784616:3784720 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 00/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1
+x3207c0s25b0n0:3784616:3784720 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 02/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Connected all rings
+x3207c0s25b0n0:3784616:3784720 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1
+x3207c0s25b0n0:3784616:3784720 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 03/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2x3207c0s25b1n0:3802104:3802104 [3] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b1n0:3802104:3802104 [3] NCCL INFO Bootstrap : Using bond0:10.140.56.239<0>
+x3207c0s25b1n0:3802104:3802104 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b1n0:3802104:3802104 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Using Libfabric version 1.15
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Using CUDA driver version 12020
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Using transport protocol SENDRECV
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Using network AWS Libfabric
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO DMA-BUF is available on GPU device 3
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO comm 0x55f222851df0 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x2c6663e44b30c3fc - Init START
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO comm 0x55f222851df0 rank 7 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Trees [0] 4/-1/-1->7->6 [1] 6/-1/-1->7->3 [2] 4/-1/-1->7->6 [3] 6/3/-1->7->-1
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b1n0:3802104:3802208 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 00/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1
+x3207c0s25b1n0:3802104:3802208 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 02/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1
+x3207c0s25b1n0:3802104:3802208 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [send] via NET/AWS Libfabric/1
+x3207c0s25b1n0:3802104:3802208 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 03/0 : 7[3] -> 3[3] [send] via NET/AWS Libfabric/1
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 00/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 02/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Connected all rings
+x3207c0s25b1n0:3802104:3802208 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1
+x3207c0s25b1n0:3802104:3802208 [3] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 03/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 00/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 02/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 01/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Channel 03/0 : 7[3] x3207c0s25b1n0:3802102:3802102 [1] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b1n0:3802102:3802102 [1] NCCL INFO Bootstrap : Using bond0:10.140.56.239<0>
+x3207c0s25b1n0:3802102:3802102 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b1n0:3802102:3802102 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Using Libfabric version 1.15
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Using CUDA driver version 12020
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Using transport protocol SENDRECV
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Using network AWS Libfabric
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO DMA-BUF is available on GPU device 1
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO comm 0x55f4b45af030 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x2c6663e44b30c3fc - Init START
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Setting affinity for GPU 1 to ff0000
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO NVLS multicast support is not available on dev 1
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO comm 0x55f4b45af030 rank 5 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Trees [0] 6/-1/-1->5->1 [1] -1/-1/-1->5->4 [2] 6/1/-1->5->-1 [3] -1/-1/-1->5->4
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b1n0:3802102:3802214 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 01/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3
+x3207c0s25b1n0:3802102:3802214 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3
+x3207c0s25b1n0:3802102:3802214 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 00/0 : 5[1] -> 1[1] [send] via NET/AWS Libfabric/3
+x3207c0s25b1n0:3802102:3802214 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 02/0 : 5[1] -> 1[1] [send] via NET/AWS Libfabric/3
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 01/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 03/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Connected all rings
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 00/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 02/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3802102:3802214 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 00/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3
+x3207c0s25b1n0:3802102:3802214 [1] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Channel 02/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO Connected all trees
+x3207c0sDDP: I am worker 2 of 8. My local rank is 2
+DDP: I am worker 6 of 8. My local rank is 2
+DDP: I am worker 3 of 8. My local rank is 3
+DDP: I am worker 4 of 8. My local rank is 0
+DDP: I am worker 0 of 8. My local rank is 0
+=> Dummy data is used!
+start training
+DDP: I am worker 5 of 8. My local rank is 1
+DDP: I am worker 1 of 8. My local rank is 1
+DDP: I am worker 7 of 8. My local rank is 3
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+P/CUMEM/read
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO Connected all trees
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b0n0:3784613:3784717 [1] NCCL INFO comm 0x562002d37730 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x2c6663e44b30c3fc - Init COMPLETE
+-> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO Connected all trees
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b1n0:3802104:3802205 [3] NCCL INFO comm 0x55f222851df0 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x2c6663e44b30c3fc - Init COMPLETE
+x3207c0s25b1n0:3802103:3802103 [2] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b1n0:3802103:3802103 [2] NCCL INFO Bootstrap : Using bond0:10.140.56.239<0>
+x3207c0s25b1n0:3802103:3802103 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b1n0:3802103:3802103 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Using Libfabric version 1.15
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Using CUDA driver version 12020
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Using transport protocol SENDRECV
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Using network AWS Libfabric
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO DMA-BUF is available on GPU device 2
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO comm 0x55832e05ed30 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x2c6663e44b30c3fc - Init START
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Setting affinity for GPU 2 to ff00,00000000
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO NVLS multicast support is not available on dev 2
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO comm 0x55832e05ed30 rank 6 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 4/-1/-1->6->7 [2] 7/-1/-1->6->5 [3] 4/-1/-1->6->7
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 01/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 03/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 00/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 02/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Connected all rings
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 00/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 02/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 01/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 03/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 00/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Channel 02/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO Connected all trees
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b1n0:3802103:3802207 [2] NCCL INFO comm 0x55832e05ed30 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x2c6663e44b30c3fc - Init COMPLETE
+25b1n0:3802102:3802206 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b1n0:3802102:3802206 [1] NCCL INFO comm 0x55f4b45af030 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x2c6663e44b30c3fc - Init COMPLETE
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Using Libfabric version 1.15
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Using CUDA driver version 12020
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Using transport protocol SENDRECV
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Using network AWS Libfabric
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO DMA-BUF is available on GPU device 0
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO comm 0x55bb49be3bf0 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x2c6663e44b30c3fc - Init START
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO NVLS multicast support is not available on dev 0
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO comm 0x55bb49be3bf0 rank 0 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 00/04 :    0   2   3   7   6   4   5   1
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 01/04 :    0   1   5   4   6   7   3   2
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 02/04 :    0   2   3   7   6   4   5   1
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 03/04 :    0   1   5   4   6   7   3   2
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Trees [0] -1/-1/-1->0->3 [1] 1/-1/-1->0->2 [2] -1/-1/-1->0->3 [3] 1/-1/-1->0->2
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Connected all rings
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 00/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Channel 02/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO Connected all trees
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b0n0:3784612:3784715 [0] NCCL INFO comm 0x55bb49be3bf0 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x2c6663e44b30c3fc - Init COMPLETE
+x3207c0s25b0n0:3784614:3784614 [2] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b0n0:3784614:3784614 [2] NCCL INFO Bootstrap : Using bond0:10.140.56.238<0>
+x3207c0s25b0n0:3784614:3784614 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b0n0:3784614:3784614 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Using Libfabric version 1.15
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Using CUDA driver version 12020
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Using transport protocol SENDRECV
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Using network AWS Libfabric
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO DMA-BUF is available on GPU device 2
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO comm 0x55fe2ef451b0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x2c6663e44b30c3fc - Init START
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Setting affinity for GPU 2 to ff00,00000000
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO NVLS multicast support is not available on dev 2
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO comm 0x55fe2ef451b0 rank 2 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 0/-1/-1->2->3 [2] 3/-1/-1->2->1 [3] 0/-1/-1->2->3
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Channel 03/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Connected all rings
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO Connected all trees
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b0n0:3784614:3784716 [2] NCCL INFO comm 0x55fe2ef451b0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x2c6663e44b30c3fc - Init COMPLETE
+] via P2P/CUMEM/read
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO Connected all trees
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b0n0:3784616:3784718 [3] NCCL INFO comm 0x562adc905370 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x2c6663e44b30c3fc - Init COMPLETE
+x3207c0s25b1n0:3802101:3802101 [0] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b1n0:3802101:3802101 [0] NCCL INFO Bootstrap : Using bond0:10.140.56.239<0>
+x3207c0s25b1n0:3802101:3802101 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b1n0:3802101:3802101 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Initializing aws-ofi-nccl 1.9.1-aws
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Using Libfabric version 1.15
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Using CUDA driver version 12020
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Using transport protocol SENDRECV
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Using network AWS Libfabric
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO DMA-BUF is available on GPU device 0
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO comm 0x56533cb89f50 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x2c6663e44b30c3fc - Init START
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NET/OFI Libfabric provider associates MRs with endpoints
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO NVLS multicast support is not available on dev 0
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO comm 0x56533cb89f50 rank 4 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Trees [0] -1/-1/-1->4->7 [1] 5/-1/-1->4->6 [2] -1/-1/-1->4->7 [3] 5/-1/-1->4->6
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Channel 00/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Channel 02/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Channel 01/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Channel 03/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Connected all rings
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Channel 01/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Channel 03/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Channel 00/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Channel 02/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO Connected all trees
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b1n0:3802101:3802204 [0] NCCL INFO comm 0x56533cb89f50 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x2c6663e44b30c3fc - Init COMPLETE
+Throughput: 3429.245 images/s, Batch size: 16, Num of GPUs: 8, Total time: 5.552 s, Average batch time: 0.055 s, First batch time: 1.856 s
+start training
+Throughput: 3478.010 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.881 s, Average batch time: 0.038 s, First batch time: 0.238 s
+start training
+Throughput: 3445.546 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.912 s, Average batch time: 0.039 s, First batch time: 0.234 s
+start training
+Throughput: 3443.226 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.920 s, Average batch time: 0.039 s, First batch time: 0.240 s
+start training
+Throughput: 3432.241 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.926 s, Average batch time: 0.039 s, First batch time: 0.234 s
+start training
+Throughput: 3461.497 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.893 s, Average batch time: 0.039 s, First batch time: 0.232 s
+start training
+Throughput: 3420.523 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.940 s, Average batch time: 0.039 s, First batch time: 0.235 s
+start training
+Throughput: 3424.737 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.933 s, Average batch time: 0.039 s, First batch time: 0.232 s
+start training
+Throughput: 3376.801 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.985 s, Average batch time: 0.039 s, First batch time: 0.233 s
+start training
+Throughput: 3479.392 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.881 s, Average batch time: 0.038 s, First batch time: 0.239 s
+Total time: 41.242613792419434
+x3207c0s25b1n0:3802101:3802211 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+x3207c0s25b0n0:3784612:3784725 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+x3207c0s25b0n0:3784614:3784721 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+x3207c0s25b0n0:3784616:3784720 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+x3207c0s25b0n0:3784613:3784719 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+x3207c0s25b1n0:3802101:3804607 [0] NCCL INFO comm 0x56533cb89f50 rank 4 nranks 8 cudaDev 0 busId 7000 - Abort COMPLETE
+x3207c0s25b0n0:3784612:3787115 [0] NCCL INFO comm 0x55bb49be3bf0 rank 0 nranks 8 cudaDev 0 busId 7000 - Abort COMPLETE
+x3207c0s25b1n0:3802104:3802208 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+x3207c0s25b1n0:3802102:3802214 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+x3207c0s25b1n0:3802103:3802210 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+x3207c0s25b0n0:3784614:3787114 [0] NCCL INFO comm 0x55fe2ef451b0 rank 2 nranks 8 cudaDev 2 busId 85000 - Abort COMPLETE
+x3207c0s25b1n0:3802102:3804603 [0] NCCL INFO comm 0x55f4b45af030 rank 5 nranks 8 cudaDev 1 busId 46000 - Abort COMPLETE
+x3207c0s25b0n0:3784616:3787118 [0] NCCL INFO comm 0x562adc905370 rank 3 nranks 8 cudaDev 3 busId c7000 - Abort COMPLETE
+x3207c0s25b1n0:3802103:3804606 [0] NCCL INFO comm 0x55832e05ed30 rank 6 nranks 8 cudaDev 2 busId 85000 - Abort COMPLETE
+x3207c0s25b0n0:3784613:3787117 [0] NCCL INFO comm 0x562002d37730 rank 1 nranks 8 cudaDev 1 busId 46000 - Abort COMPLETE
+x3207c0s25b1n0:3802104:3804602 [0] NCCL INFO comm 0x55f222851df0 rank 7 nranks 8 cudaDev 3 busId c7000 - Abort COMPLETE

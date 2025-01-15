@@ -1,0 +1,435 @@
+x3207c0s25b0n0:3787133:3787133 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3207c0s25b0n0:3787133:3787133 [0] NCCL INFO Bootstrap : Using hsn1:10.201.1.26<0>
+x3207c0s25b0n0:3787133:3787133 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3207c0s25b0n0:3787133:3787133 [0] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3207c0s25b0n0:3787133:3787133 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b0n0:3787133:3787133 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b0n0:3787133:3787133 [0] NCCL INFO cudaDriverVersion 12020
+NCCL version 2.20.5+cuda12.4
+x3207c0s25b0n0:3787134:3787134 [1] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b0n0:3787134:3787134 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3207c0s25b0n0:3787134:3787134 [1] NCCL INFO Bootstrap : Using hsn1:10.201.1.26<0>
+x3207c0s25b0n0:3787134:3787134 [1] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3207c0s25b0n0:3787134:3787134 [1] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3207c0s25b0n0:3787134:3787134 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b0n0:3787134:3787134 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b0n0:3787134:3787256 [1] 98.245589 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3207c0s25b0n0:3787134:3787256 [1] 98.253835 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3207c0s25b0n0:3787134:3787256 [1] 98.255087 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3207c0s25b0n0:3787134:3787256 [1] 98.256219 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Using network AWS Libfabric
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO DMA-BUF is available on GPU device 1
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO comm 0x55e070689ab0 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x985f886fa6ca5276 - Init START
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Setting affinity for GPU 1 to ff0000
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO NVLS multicast support is not available on dev 1
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO comm 0x55e070689ab0 rank 1 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Trees [0] 2/5/-1->1->-1 [1] -1/-1/-1->1->0 [2] 2/-1/-1->1->5 [3] -1/-1/-1->1->0
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 00/0 : 5[1] -> 1[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 02/0 : 5[1] -> 1[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 01/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3787134:3787260 [1] 866.511380 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b0n0:3787134:3787260 [1] 866.524986 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787134:3787260 [1] 874.272907 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b0n0:3787134:3787260 [1] 874.280862 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787134:3787260 [1] 881.374300 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787134:3787260 [1] 885.203897 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Connected all rings
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3x3207c0s25b1n0:3804613:3804613 [1] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b1n0:3804613:3804613 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3207c0s25b1n0:3804613:3804613 [1] NCCL INFO Bootstrap : Using hsn1:10.201.1.29<0>
+x3207c0s25b1n0:3804613:3804613 [1] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3207c0s25b1n0:3804613:3804613 [1] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3207c0s25b1n0:3804613:3804613 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b1n0:3804613:3804613 [1] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b1n0:3804613:3804732 [1] 121.400504 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3207c0s25b1n0:3804613:3804732 [1] 121.409732 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3207c0s25b1n0:3804613:3804732 [1] 121.411064 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3207c0s25b1n0:3804613:3804732 [1] 121.412046 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Using network AWS Libfabric
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO DMA-BUF is available on GPU device 1
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO comm 0x558bfe3394b0 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x985f886fa6ca5276 - Init START
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Setting affinity for GPU 1 to ff0000
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO NVLS multicast support is not available on dev 1
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO comm 0x558bfe3394b0 rank 5 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Trees [0] 6/-1/-1->5->1 [1] -1/-1/-1->5->4 [2] 6/1/-1->5->-1 [3] -1/-1/-1->5->4
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 01/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 00/0 : 5[1] -> 1[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 02/0 : 5[1] -> 1[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 01/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 03/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3804613:3804738 [1] 648.669403 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804613:3804738 [1] 655.388774 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804613:3804738 [1] 658.410453 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b1n0:3804613:3804738 [1] 658.422005 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804613:3804738 [1] 663.202135 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b1n0:3804613:3804738 [1] 663.208116 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Connected all rings
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 00/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1x3207c0s25b1n0:3804615:3804615 [3] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b1n0:3804615:3804615 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3207c0s25b1n0:3804615:3804615 [3] NCCL INFO Bootstrap : Using hsn1:10.201.1.29<0>
+x3207c0s25b1n0:3804615:3804615 [3] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3207c0s25b1n0:3804615:3804615 [3] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3207c0s25b1n0:3804615:3804615 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b1n0:3804615:3804615 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b1n0:3804615:3804730 [3] 97.708677 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3207c0s25b1n0:3804615:3804730 [3] 97.716802 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3207c0s25b1n0:3804615:3804730 [3] 97.718295 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3207c0s25b1n0:3804615:3804730 [3] 97.719367 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Using network AWS Libfabric
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO DMA-BUF is available on GPU device 3
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO comm 0x558d0ad8ba30 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x985f886fa6ca5276 - Init START
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO comm 0x558d0ad8ba30 rank 7 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Trees [0] 4/-1/-1->7->6 [1] 6/-1/-1->7->3 [2] 4/-1/-1->7->6 [3] 6/3/-1->7->-1
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 00/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 02/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 03/0 : 7[3] -> 3[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 00/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 02/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3804615:3804733 [3] 670.311531 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b1n0:3804615:3804733 [3] 670.328482 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804615:3804733 [3] 678.003022 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804615:3804733 [3] 681.626475 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804615:3804733 [3] 684.851997 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b1n0:3804615:3804733 [3] 684.857468 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Connected all rings
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 03/0 : 3[3] -> 7[3] [rex3207c0s25b0n0:3787136:3787136 [3] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b0n0:3787136:3787136 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3207c0s25b0n0:3787136:3787136 [3] NCCL INFO Bootstrap : Using hsn1:10.201.1.26<0>
+x3207c0s25b0n0:3787136:3787136 [3] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3207c0s25b0n0:3787136:3787136 [3] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3207c0s25b0n0:3787136:3787136 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b0n0:3787136:3787136 [3] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b0n0:3787136:3787257 [3] 130.322260 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3207c0s25b0n0:3787136:3787257 [3] 130.331337 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3207c0s25b0n0:3787136:3787257 [3] 130.332829 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3207c0s25b0n0:3787136:3787257 [3] 130.333911 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Using network AWS Libfabric
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO DMA-BUF is available on GPU device 3
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO comm 0x55f9fd260470 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x985f886fa6ca5276 - Init START
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x3207c0s25b0n0:3787136:3787257 [3] NceCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO comm 0x55f9fd260470 rank 3 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Trees [0] 0/-1/-1->3->2 [1] 2/7/-1->3->-1 [2] 0/-1/-1->3->2 [3] 2/-1/-1->3->7
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 03/0 : 7[3] -> 3[3] [receive] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 00/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 02/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787136:3787258 [3] 853.103171 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787136:3787258 [3] 857.742544 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b0n0:3787136:3787258 [3] 857.750459 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787136:3787258 [3] 865.420714 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787136:3787258 [3] 867.123493 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b0n0:3787136:3787258 [3] 867.130707 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Connected all rings
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [send] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 03/0 : 3[3] -> 7[3] [senDDP: I am worker 2 of 8. My local rank is 2
+DDP: I am worker 3 of 8. My local rank is 3
+DDP: I am worker 0 of 8. My local rank is 0
+=> Dummy data is used!
+start training
+DDP: I am worker 1 of 8. My local rank is 1
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+DDP: I am worker 6 of 8. My local rank is 2
+DDP: I am worker 4 of 8. My local rank is 0
+DDP: I am worker 5 of 8. My local rank is 1
+DDP: I am worker 7 of 8. My local rank is 3
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/soft/applications/conda/2024-04-29/mconda3/lib/python3.11/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+d] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787136:3787258 [3] 943.992016 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787136:3787258 [3] 952.660503 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO Connected all trees
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b0n0:3787136:3787257 [3] NCCL INFO comm 0x55f9fd260470 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x985f886fa6ca5276 - Init COMPLETE
+x3207c0s25b1n0:3804614:3804614 [2] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b1n0:3804614:3804614 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3207c0s25b1n0:3804614:3804614 [2] NCCL INFO Bootstrap : Using hsn1:10.201.1.29<0>
+x3207c0s25b1n0:3804614:3804614 [2] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3207c0s25b1n0:3804614:3804614 [2] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3207c0s25b1n0:3804614:3804614 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b1n0:3804614:3804614 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b1n0:3804614:3804731 [2] 116.306344 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3207c0s25b1n0:3804614:3804731 [2] 116.314970 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3207c0s25b1n0:3804614:3804731 [2] 116.316302 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3207c0s25b1n0:3804614:3804731 [2] 116.317204 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Using network AWS Libfabric
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO DMA-BUF is available on GPU device 2
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO comm 0x55f3876c2270 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x985f886fa6ca5276 - Init START
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Setting affinity for GPU 2 to ff00,00000000
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO NVLS multicast support is not available on dev 2
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO comm 0x55f3876c2270 rank 6 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 4/-1/-1->6->7 [2] 7/-1/-1->6->5 [3] 4/-1/-1->6->7
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 01/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 03/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 00/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 02/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Connected all rings
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 00/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 02/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 01/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 03/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 00/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Channel 02/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO Connected all trees
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b1n0:3804614:3804731 [2] NCCL INFO comm 0x55f3876c2270 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x985f886fa6ca5276 - Init COMPLETE
+x3207c0s25b0n0:3787135:3787135 [2] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b0n0:3787135:3787135 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3207c0s25b0n0:3787135:3787135 [2] NCCL INFO Bootstrap : Using hsn1:10.201.1.26<0>
+x3207c0s25b0n0:3787135:3787135 [2] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3207c0s25b0n0:3787135:3787135 [2] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3207c0s25b0n0:3787135:3787135 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b0n0:3787135:3787135 [2] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b0n0:3787135:3787255 [2] 110.887484 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3207c0s25b0n0:3787135:3787255 [2] 110.895449 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3207c0s25b0n0:3787135:3787255 [2] 110.896842 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3207c0s25b0n0:3787135:3787255 [2] 110.897823 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Using network AWS Libfabric
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO DMA-BUF is available on GPU device 2
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO comm 0x558c4d37a130 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x985f886fa6ca5276 - Init START
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Setting affinity for GPU 2 to ff00,00000000
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO NVLS multicast support is not available on dev 2
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO comm 0x558c4d37a130 rank 2 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 0/-1/-1->2->3 [2] 3/-1/-1->2->1 [3] 0/-1/-1->2->3
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Channel 03/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Connected all rings
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO Connected all trees
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b0n0:3787135:3787255 [2] NCCL INFO comm 0x558c4d37a130 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0x985f886fa6ca5276 - Init COMPLETE
+x3207c0s25b1n0:3804612:3804612 [0] NCCL INFO cudaDriverVersion 12020
+x3207c0s25b1n0:3804612:3804612 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+x3207c0s25b1n0:3804612:3804612 [0] NCCL INFO Bootstrap : Using hsn1:10.201.1.29<0>
+x3207c0s25b1n0:3804612:3804612 [0] NCCL INFO NET/Plugin: Failed to find ncclNetPlugin_v8 symbol.
+x3207c0s25b1n0:3804612:3804612 [0] NCCL INFO NET/Plugin: Loaded net plugin AWS Libfabric (v6)
+x3207c0s25b1n0:3804612:3804612 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin_v8 symbol.
+x3207c0s25b1n0:3804612:3804612 [0] NCCL INFO NET/Plugin: Failed to find ncclCollNetPlugin symbol (>= v5). ncclCollNetPlugin symbols v4 and lower are not supported.
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b1n0:3804612:3804729 [0] 207.617024 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3207c0s25b1n0:3804612:3804729 [0] 207.626602 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3207c0s25b1n0:3804612:3804729 [0] 207.628064 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3207c0s25b1n0:3804612:3804729 [0] 207.629096 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Using network AWS Libfabric
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO DMA-BUF is available on GPU device 0
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO comm 0x559f5651ffb0 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x985f886fa6ca5276 - Init START
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO NVLS multicast support is not available on dev 0
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO comm 0x559f5651ffb0 rank 4 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Trees [0] -1/-1/-1->4->7 [1] 5/-1/-1->4->6 [2] -1/-1/-1->4->7 [3] 5/-1/-1->4->6
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Channel 00/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Channel 02/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Channel 01/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Channel 03/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Connected all rings
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Channel 01/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Channel 03/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Channel 00/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Channel 02/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO Connected all trees
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b1n0:3804612:3804729 [0] NCCL INFO comm 0x559f5651ffb0 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x985f886fa6ca5276 - Init COMPLETE
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO NET/OFI Using aws-ofi-nccl 1.6.0
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO NET/OFI Selected Provider is cxi (found 4 nics)
+x3207c0s25b0n0:3787133:3787254 [0] 126.089072 nccl_net_ofi_init:1396 NCCL TRACE NET/OFI Provider cxi does not require registration of local memory buffers
+x3207c0s25b0n0:3787133:3787254 [0] 126.097467 nccl_net_ofi_init:1406 NCCL TRACE NET/OFI Provider cxi does not use remote virtual addressing
+x3207c0s25b0n0:3787133:3787254 [0] 126.098710 nccl_net_ofi_init:1425 NCCL TRACE NET/OFI Provider cxi selects memory registration keys
+x3207c0s25b0n0:3787133:3787254 [0] 126.099742 nccl_net_ofi_init:1459 NCCL TRACE NET/OFI Provider cxi requires endpoint memory registration
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Using non-device net plugin version 0
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Using network AWS Libfabric
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO DMA-BUF is available on GPU device 0
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO comm 0x55627498bce0 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x985f886fa6ca5276 - Init START
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO NCCL_NET_GDR_LEVEL set by environment to PHB
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO NVLS multicast support is not available on dev 0
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO NCCL_CROSS_NIC set by environment to 1.
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO comm 0x55627498bce0 rank 0 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 00/04 :    0   2   3   7   6   4   5   1
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 01/04 :    0   1   5   4   6   7   3   2
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 02/04 :    0   2   3   7   6   4   5   1
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 03/04 :    0   1   5   4   6   7   3   2
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Trees [0] -1/-1/-1->0->3 [1] 1/-1/-1->0->2 [2] -1/-1/-1->0->3 [3] 1/-1/-1->0->2
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO P2P Chunksize set to 131072
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Connected all rings
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 00/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Channel 02/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO Connected all trees
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b0n0:3787133:3787254 [0] NCCL INFO comm 0x55627498bce0 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0x985f886fa6ca5276 - Init COMPLETE
+787134:3787256 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 00/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 02/0 : 1[1] -> 5[1] [send] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3207c0s25b0n0:3787134:3787260 [1] 932.631497 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787134:3787260 [1] 944.984276 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO Connected all trees
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b0n0:3787134:3787256 [1] NCCL INFO comm 0x55e070689ab0 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x985f886fa6ca5276 - Init COMPLETE
+ive] via NET/AWS Libfabric/1/GDRDMA
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 00/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 02/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 01/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Channel 03/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3804615:3804733 [3] 762.346335 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b1n0:3804615:3804733 [3] 762.352977 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804615:3804733 [3] 767.191127 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b1n0:3804615:3804733 [3] 767.197248 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO Connected all trees
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b1n0:3804615:3804730 [3] NCCL INFO comm 0x558d0ad8ba30 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0x985f886fa6ca5276 - Init COMPLETE
+n0:3804613:3804732 [1] NCCL INFO Channel 02/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 00/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Channel 02/0 : 1[1] -> 5[1] [receive] via NET/AWS Libfabric/3/GDRDMA
+x3207c0s25b1n0:3804613:3804738 [1] 728.567285 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b1n0:3804613:3804738 [1] 728.574910 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804613:3804738 [1] 731.329687 alloc_and_reg_flush_buff:2216 NCCL TRACE NET/OFI Registering buffer for flush operations
+x3207c0s25b1n0:3804613:3804738 [1] 731.336229 register_mr_buffers:585 NCCL TRACE NET/OFI Skip registering host buffer. local_mr: 0
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO Connected all trees
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3207c0s25b1n0:3804613:3804732 [1] NCCL INFO comm 0x558bfe3394b0 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0x985f886fa6ca5276 - Init COMPLETE
+Throughput: 4751.982 images/s, Batch size: 16, Num of GPUs: 8, Total time: 3.502 s, Average batch time: 0.035 s, First batch time: 0.835 s
+start training
+Throughput: 4812.145 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.854 s, Average batch time: 0.028 s, First batch time: 0.221 s
+start training
+Throughput: 4803.887 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.834 s, Average batch time: 0.028 s, First batch time: 0.196 s
+start training
+Throughput: 4789.886 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.846 s, Average batch time: 0.028 s, First batch time: 0.201 s
+start training
+Throughput: 4835.665 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.824 s, Average batch time: 0.028 s, First batch time: 0.203 s
+start training
+Throughput: 4779.828 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.850 s, Average batch time: 0.028 s, First batch time: 0.199 s
+start training
+Throughput: 4788.007 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.845 s, Average batch time: 0.028 s, First batch time: 0.199 s
+start training
+Throughput: 4838.488 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.829 s, Average batch time: 0.028 s, First batch time: 0.210 s
+start training
+Throughput: 4799.202 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.845 s, Average batch time: 0.028 s, First batch time: 0.204 s
+start training
+Throughput: 4778.696 images/s, Batch size: 16, Num of GPUs: 8, Total time: 2.847 s, Average batch time: 0.028 s, First batch time: 0.195 s
+Total time: 29.54100275039673
+x3207c0s25b0n0:3787133:3787259 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+x3207c0s25b1n0:3804612:3804737 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+x3207c0s25b0n0:3787133:3789292 [0] NCCL INFO comm 0x55627498bce0 rank 0 nranks 8 cudaDev 0 busId 7000 - Abort COMPLETE
+x3207c0s25b0n0:3787134:3787260 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+x3207c0s25b0n0:3787134:3787260 [1] 31310.451840 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b0n0:3787136:3787258 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+x3207c0s25b0n0:3787134:3787260 [1] 31310.761863 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b0n0:3787134:3787260 [1] 31310.803551 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b0n0:3787136:3787258 [3] 31293.868796 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b0n0:3787134:3787260 [1] 31311.116359 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b0n0:3787136:3787258 [3] 31294.172707 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b0n0:3787136:3787258 [3] 31294.211009 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b0n0:3787136:3787258 [3] 31294.470136 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b0n0:3787134:3787260 [1] 31312.158097 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b0n0:3787134:3787260 [1] 31312.459774 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b0n0:3787136:3787258 [3] 31295.774868 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b0n0:3787136:3787258 [3] 31296.031410 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b0n0:3787135:3787261 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+x3207c0s25b0n0:3787136:3789290 [0] NCCL INFO comm 0x55f9fd260470 rank 3 nranks 8 cudaDev 3 busId c7000 - Abort COMPLETE
+x3207c0s25b1n0:3804615:3804733 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+x3207c0s25b1n0:3804615:3804733 [3] 31191.554404 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b1n0:3804615:3804733 [3] 31191.914901 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b1n0:3804615:3804733 [3] 31191.949877 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b1n0:3804615:3804733 [3] 31192.387790 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b1n0:3804613:3804738 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+x3207c0s25b1n0:3804613:3804738 [1] 31170.240178 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b1n0:3804613:3804738 [1] 31170.590847 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b1n0:3804613:3804738 [1] 31170.626183 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b1n0:3804613:3804738 [1] 31170.928852 nccl_net_ofi_deregMr:2528 NCCL TRACE NET/OFI Null MR handle provided. Skipping deregisteration.
+x3207c0s25b1n0:3804615:3804733 [3] 31194.288080 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b1n0:3804613:3804738 [1] 31172.403753 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b1n0:3804614:3804734 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+x3207c0s25b1n0:3804615:3804733 [3] 31194.573647 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b1n0:3804613:3804738 [1] 31172.687406 nccl_net_ofi_closeRecv:3013 NCCL TRACE NET/OFI De-registering buffer for flush operations
+x3207c0s25b1n0:3804612:3806815 [0] NCCL INFO comm 0x559f5651ffb0 rank 4 nranks 8 cudaDev 0 busId 7000 - Abort COMPLETE
+x3207c0s25b1n0:3804614:3806816 [0] NCCL INFO comm 0x55f3876c2270 rank 6 nranks 8 cudaDev 2 busId 85000 - Abort COMPLETE
+x3207c0s25b1n0:3804615:3806818 [0] NCCL INFO comm 0x558d0ad8ba30 rank 7 nranks 8 cudaDev 3 busId c7000 - Abort COMPLETE
+x3207c0s25b0n0:3787134:3789293 [0] NCCL INFO comm 0x55e070689ab0 rank 1 nranks 8 cudaDev 1 busId 46000 - Abort COMPLETE
+x3207c0s25b0n0:3787135:3789288 [0] NCCL INFO comm 0x558c4d37a130 rank 2 nranks 8 cudaDev 2 busId 85000 - Abort COMPLETE
+x3207c0s25b1n0:3804613:3806820 [0] NCCL INFO comm 0x558bfe3394b0 rank 5 nranks 8 cudaDev 1 busId 46000 - Abort COMPLETE
