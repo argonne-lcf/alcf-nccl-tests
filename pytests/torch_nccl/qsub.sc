@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l walltime=0:10:00 -q workq -l filesystems=home:tegu -A datascience -l select=2
+#PBS -l walltime=0:10:00 -q debug-scaling -l filesystems=home:eagle -A datascience -l select=2
 
 module load conda
 conda activate

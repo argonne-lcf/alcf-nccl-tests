@@ -3,16 +3,21 @@
 #PBS -l select=2
 #PBS -l walltime=00:10:00
 #PBS -N VAE
+#PBS -q debug
 #PBS -A datascience
-#PBS -l filesystems=home:tegu
+#PBS -l filesystems=home:eagle
 
 module load conda
 conda activate
+
 unset NCCL_NET
 unset NCCL_NET_GDR_LEVEL
 
-
 cd $PBS_O_WORKDIR
+
+[ -e local/lib/python3.11/site-packages/ ] || sh ./install.sh
+export PYTHONPATH=$PBS_O_WORKDIR/local/lib/python3.11/site-packages/:$PYTHONPATH
+  
 OUTPUT=results/$(date +'%Y-%m-%d-%H-%M-%S')
 mkdir -p $OUTPUT
 

@@ -3,13 +3,15 @@
 #PBS -S /bin/bash
 #PBS -W block=false
 #PBS -l select=2
+#PBS -q debug
 #PBS -l walltime=00:10:00
 #PBS -N resnet
 #PBS -A datascience
-#PBS -l filesystems=home:tegu
+#PBS -l filesystems=home:eagle
 #-------------------------------------------------------------------------------
 module load conda
 conda activate
+
 cd ${PBS_O_WORKDIR}
 
 export HOROVOD_LOG_LEVEL=ERROR
@@ -72,7 +74,6 @@ unset NCCL_NET NCCL_COLLNET_ENABLE NCCL_NET_GDR_LEVEL NCCL_CROSS_NIC
 echo "start time: `date`"
 mpiexec -np $TOTAL_NUMBER_OF_RANKS -ppn $RANKS_PER_NODE --cpu-bind depth -d 16 python ${EXE} ${WKLD_OPTS} >& $OUTPUT/without_aws.log
 echo "end time: `date`"
-
 
 source ../aws.sh
 echo "Rerun with AWS"
