@@ -7,11 +7,20 @@ export NCCL_NET_GDR_LEVEL=PHB
 export NCCL_CROSS_NIC=1
 export NCCL_COLLNET_ENABLE=1
 export NCCL_NET="AWS Libfabric"
-export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.9.1-aws/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/soft/libraries/aws-ofi-nccl/v1.6.0/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/soft/libraries/hwloc/lib/:$LD_LIBRARY_PATH
 export FI_CXI_DISABLE_HOST_REGISTER=1
 export FI_MR_CACHE_MONITOR=userfaultfd
 export FI_CXI_DEFAULT_CQ_SIZE=131072
+export FI_CXI_DEFAULT_TX_SIZE=131072
+export FI_CXI_RDZV_PROTO=alt_read
+export FI_CXI_RX_MATCH_MODE=software
+export FI_CXI_REQ_BUF_SIZE=16MB
+
+# Additional variables that are initially found out necessary for Grace Hopper but seems to be critical to A100. 
+export FI_CXI_RDZV_GET_MIN=0
+export FI_CXI_SAFE_DEVMEM_COPY_THRESHOLD=16000
+export FI_CXI_RDZV_THRESHOLD=2000
 ```
 This achieves 5-10x improvement over the default setup. 
 
