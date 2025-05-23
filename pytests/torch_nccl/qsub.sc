@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l walltime=0:10:00 -q debug-scaling -l filesystems=home:eagle -A datascience -l select=2
+#PBS -l walltime=0:10:00 -q debug-scaling -l filesystems=home:eagle -A datascience -l select=2 -N torch_nccl
 
 module load conda
 conda activate
