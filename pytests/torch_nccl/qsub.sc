@@ -30,7 +30,7 @@ run_jobs >& $OUTPUT/without_aws.log
 
 echo "Run with AWS"
 cd $PBS_O_WORKDIR
-source ../aws_2025.01.15.sh
+source ../aws_2025.06.26.sh
 env >& $OUTPUT/env_aws.dat
 run_jobs >& $OUTPUT/with_aws.log
 
