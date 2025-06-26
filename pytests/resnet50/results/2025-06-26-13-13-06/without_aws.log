@@ -1,0 +1,271 @@
+x3006c0s1b1n0:1433821:1433821 [0] NCCL INFO Bootstrap : Using bond0:10.140.57.98<0>
+x3006c0s1b1n0:1433821:1433821 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x3006c0s1b1n0:1433821:1433821 [0] NCCL INFO cudaDriverVersion 12020
+NCCL version 2.20.5+cuda12.4
+DDP: I am worker 2 of 8. My local rank is 2
+DDP: I am worker 0 of 8. My local rank is 0
+=> Dummy data is used!
+start training
+DDP: I am worker 3 of 8. My local rank is 3
+DDP: I am worker 6 of 8. My local rank is 2
+DDP: I am worker 4 of 8. My local rank is 0
+DDP: I am worker 1 of 8. My local rank is 1
+DDP: I am worker 5 of 8. My local rank is 1
+DDP: I am worker 7 of 8. My local rank is 3
+x3006c0s25b0n0:849780:849780 [2] NCCL INFO cudaDriverVersion 12020
+x3006c0s25b0n0:849780:849780 [2] NCCL INFO Bootstrap : Using bond0:10.140.57.102<0>
+x3006c0s25b0n0:849780:849780 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO NET/IB : No device found.
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO NET/Socket : Using [0]bond0:10.140.57.102<0> [1]hsn1:10.201.2.19<0> [2]hsn0:10.201.2.8<0>
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Using non-device net plugin version 0
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Using network Socket
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO comm 0x555e7b78acb0 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0xb4d6ac1c5ff8674d - Init START
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Setting affinity for GPU 2 to ff00,00000000
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO NVLS multicast support is not available on dev 2
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO comm 0x555e7b78acb0 rank 6 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 4/-1/-1->6->7 [2] 7/-1/-1->6->5 [3] 4/-1/-1->6->7
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO P2P Chunksize set to 131072
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 01/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 03/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 00/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 02/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Connected all rings
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 00/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 02/0 : 6[2] -> 7[3] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 01/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3006c0s25b0x3006c0s25b0n0:849778:849778 [0] NCCL INFO cudaDriverVersion 12020
+x3006c0s25b0n0:849778:849778 [0] NCCL INFO Bootstrap : Using bond0:10.140.57.102<0>
+x3006c0s25b0n0:849778:849778 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO NET/IB : No device found.
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO NET/Socket : Using [0]bond0:10.140.57.102<0> [1]hsn1:10.201.2.19<0> [2]hsn0:10.201.2.8<0>
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Using non-device net plugin version 0
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Using network Socket
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO comm 0x559220af5e30 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0xb4d6ac1c5ff8674d - Init START
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO NVLS multicast support is not available on dev 0
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO comm 0x559220af5e30 rank 4 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Trees [0] -1/-1/-1->4->7 [1] 5/-1/-1->4->6 [2] -1/-1/-1->4->7 [3] 5/-1/-1->4->6
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO P2P Chunksize set to 131072
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Channel 00/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Channel 02/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Channel 01/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Channel 03/0 : 4[0] -> 6[2] via P2P/CUMEM/read
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Connected all rings
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Channel 01/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Channel 03/0 : 4[0] -> 5[1] via P2P/CUMEM/read
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Channel 00/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO Channel 02/0 : 4[0] -> 7[3] via P2P/CUMEM/read
+x3006c0sn0:849780:849942 [2] NCCL INFO Channel 03/0 : 6[2] -> 4[0] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 00/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Channel 02/0 : 6[2] -> 5[1] via P2P/CUMEM/read
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO Connected all trees
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3006c0s25b0n0:849780:849942 [2] NCCL INFO comm 0x555e7b78acb0 rank 6 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0xb4d6ac1c5ff8674d - Init COMPLETE
+25b0n0:849778:849939 [0] NCCL INFO Connected all trees
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3006c0s25b0n0:849778:849939 [0] NCCL INFO comm 0x559220af5e30 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0xb4d6ac1c5ff8674d - Init COMPLETE
+x3006c0s25b0n0:849781:849781 [3] NCCL INFO cudaDriverVersion 12020
+x3006c0s25b0n0:849781:849781 [3] NCCL INFO Bootstrap : Using bond0:10.140.57.102<0>
+x3006c0s25b0n0:849781:849781 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO NET/IB : No device found.
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO NET/Socket : Using [0]bond0:10.140.57.102<0> [1]hsn1:10.201.2.19<0> [2]hsn0:10.201.2.8<0>
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Using non-device net plugin version 0
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Using network Socket
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO comm 0x56130a4bfa70 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0xb4d6ac1c5ff8674d - Init START
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO comm 0x56130a4bfa70 rank 7 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Trees [0] 4/-1/-1->7->6 [1] 6/-1/-1->7->3 [2] 4/-1/-1->7->6 [3] 6/3/-1->7->-1
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO P2P Chunksize set to 131072
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 00/0 : 3[3] -> 7[3] [receive] via NET/Socket/1
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 02/0 : 3[3] -> 7[3] [receive] via NET/Socket/1
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [send] via NET/Socket/1
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 03/0 : 7[3] -> 3[3] [send] via NET/Socket/1
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 00/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 02/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Connected all rings
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [receive] via NET/Socket/1
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 03/0 : 3[3] -> 7[3] [receive] via NET/Socket/1
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 00/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 02/0 : 7[3] -> 4[0] via P2P/CUMEM/read
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 01/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Channel 03/0 : 7[3] -> 6[2] via P2P/CUMEM/read
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO Connected all trees
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3006c0s25b0n0:849781:849941 [3] NCCL INFO comm 0x56130a4bfa70 rank 7 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0xb4d6ac1c5ff8674d - Init COMPLETE
+x3006c0s25b0n0:849779:849779 [1] NCCL INFO cudaDriverVersion 12020
+x3006c0s25b0n0:849779:849779 [1] NCCL INFO Bootstrap : Using bond0:10.140.57.102<0>
+x3006c0s25b0n0:849779:849779 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO NET/IB : No device found.
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO NET/Socket : Using [0]bond0:10.140.57.102<0> [1]hsn1:10.201.2.19<0> [2]hsn0:10.201.2.8<0>
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Using non-device net plugin version 0
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Using network Socket
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO comm 0x55c9be142a30 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0xb4d6ac1c5ff8674d - Init START
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Setting affinity for GPU 1 to ff0000
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO NVLS multicast support is not available on dev 1
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO comm 0x55c9be142a30 rank 5 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Trees [0] 6/-1/-1->5->1 [1] -1/-1/-1->5->4 [2] 6/1/-1->5->-1 [3] -1/-1/-1->5->4
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO P2P Chunksize set to 131072
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 01/0 : 1[1] -> 5[1] [receive] via NET/Socket/2
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [receive] via NET/Socket/2
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 00/0 : 5[1] -> 1[1] [send] via NET/Socket/2
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 02/0 : 5[1] -> 1[1] [send] via NET/Socket/2
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 01/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 03/0 : 5[1] -> 4[0] via P2P/CUMEM/read
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Connected all rings
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 00/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 02/0 : 5[1] -> 6[2] via P2P/CUMEM/read
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 00/0 : 1[1] -> 5[1] [receive] via NET/Socket/2
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Channel 02/0 : 1[1] -> 5[1] [receive] via NET/Socket/2
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO Connected all trees
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3006c0s25b0n0:849779:849940 [1] NCCL INFO comm 0x55c9be142a30 rank 5 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0xb4d6ac1c5ff8674d - Init COMPLETE
+x3006c0s1b1n0:1433823:1433823 [2] NCCL INFO cudaDriverVersion 12020
+x3006c0s1b1n0:1433823:1433823 [2] NCCL INFO Bootstrap : Using bond0:10.140.57.98<0>
+x3006c0s1b1n0:1433823:1433823 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO NET/IB : No device found.
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO NET/Socket : Using [0]bond0:10.140.57.98<0> [1]hsn1:10.201.1.252<0> [2]hsn0:10.201.1.253<0>
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Using non-device net plugin version 0
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Using network Socket
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO comm 0x55f3006feaf0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0xb4d6ac1c5ff8674d - Init START
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Setting affinity for GPU 2 to ff00,00000000
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO NVLS multicast support is not available on dev 2
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO comm 0x55f3006feaf0 rank 2 nRanks 8 nNodes 2 localRanks 4 localRank 2 MNNVL 0
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 0/-1/-1->2->3 [2] 3/-1/-1->2->1 [3] 0/-1/-1->2->3
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO P2P Chunksize set to 131072
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Channel 03/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Connected all rings
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/Cx3006c0s1b1n0:1433821:1433921 [0] NCCL INFO NET/IB : No device found.
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO NET/Socket : Using [0]bond0:10.140.57.98<0> [1]hsn1:10.201.1.252<0> [2]hsn0:10.201.1.253<0>
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Using non-device net plugin version 0
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Using network Socket
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO comm 0x563ddda6acb0 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0xb4d6ac1c5ff8674d - Init START
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO NVLS multicast support is not available on dev 0
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO comm 0x563ddda6acb0 rank 0 nRanks 8 nNodes 2 localRanks 4 localRank 0 MNNVL 0
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 00/04 :    0   2   3   7   6   4   5   1
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 01/04 :    0   1   5   4   6   7   3   2
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 02/04 :    0   2   3   7   6   4   5   1
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 03/04 :    0   1   5   4   6   7   3   2
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Trees [0] -1/-1/-1->0->3 [1] 1/-1/-1->0->2 [2] -1/-1/-1->0->3 [3] 1/-1/-1->0->2
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO P2P Chunksize set to 131072
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Connected all rings
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 00/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Channel 02/0 : 0x3006c0s1b1n0:1433822:1433822 [1] NCCL INFO cudaDriverVersion 12020
+x3006c0s1b1n0:1433822:1433822 [1] NCCL INFO Bootstrap : Using bond0:10.140.57.98<0>
+x3006c0s1b1n0:1433822:1433822 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO NET/IB : No device found.
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO NET/Socket : Using [0]bond0:10.140.57.98<0> [1]hsn1:10.201.1.252<0> [2]hsn0:10.201.1.253<0>
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Using non-device net plugin version 0
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Using network Socket
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO comm 0x560132fbfc70 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0xb4d6ac1c5ff8674d - Init START
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Setting affinity for GPU 1 to ff0000
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO NVLS multicast support is not available on dev 1
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO comm 0x560132fbfc70 rank 1 nRanks 8 nNodes 2 localRanks 4 localRank 1 MNNVL 0
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Trees [0] 2/5/-1->1->-1 [1] -1/-1/-1->1->0 [2] 2/-1/-1->1->5 [3] -1/-1/-1->1->0
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO P2P Chunksize set to 131072
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 00/0 : 5[1] -> 1[1] [receive] via NET/Socket/2
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 02/0 : 5[1] -> 1[1] [receive] via NET/Socket/2
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 01/0 : 1[1] -> 5[1] [send] via NET/Socket/2
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 03/0 : 1[1] -> 5[1] [send] via NET/Socket/2
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Connected all rings
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 00/0 : 1UMEM/read
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO Connected all trees
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3006c0s1b1n0:1433823:1433922 [2] NCCL INFO comm 0x55f3006feaf0 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 85000 commId 0xb4d6ac1c5ff8674d - Init COMPLETE
+x3006c0s1b1n0:1433824:1433824 [3] NCCL INFO cudaDriverVersion 12020
+x3006c0s1b1n0:1433824:1433824 [3] NCCL INFO Bootstrap : Using bond0:10.140.57.98<0>
+x3006c0s1b1n0:1433824:1433824 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO NET/IB : No device found.
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO NET/Socket : Using [0]bond0:10.140.57.98<0> [1]hsn1:10.201.1.252<0> [2]hsn0:10.201.1.253<0>
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Using non-device net plugin version 0
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Using network Socket
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO comm 0x55b27ec8ddb0 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0xb4d6ac1c5ff8674d - Init START
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO NVLS multicast support is not available on dev 3
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO comm 0x55b27ec8ddb0 rank 3 nRanks 8 nNodes 2 localRanks 4 localRank 3 MNNVL 0
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Trees [0] 0/-1/-1->3->2 [1] 2/7/-1->3->-1 [2] 0/-1/-1->3->2 [3] 2/-1/-1->3->7
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO P2P Chunksize set to 131072
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 01/0 : 7[3] -> 3[3] [receive] via NET/Socket/1
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 03/0 : 7[3] -> 3[3] [receive] via NET/Socket/1
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 00/0 : 3[3] -> 7[3] [send] via NET/Socket/1
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 02/0 : 3[3] -> 7[3] [send] via NET/Socket/1
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Connected all rings
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 01/0 : 3[3] -> 7[3] [send] via NET/Socket/1
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Cha[0] -> 3[3] via P2P/CUMEM/read
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO Connected all trees
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3006c0s1b1n0:1433821:1433921 [0] NCCL INFO comm 0x563ddda6acb0 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 7000 commId 0xb4d6ac1c5ff8674d - Init COMPLETE
+[1] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 00/0 : 1[1] -> 5[1] [send] via NET/Socket/2
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 02/0 : 1[1] -> 5[1] [send] via NET/Socket/2
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO Connected all trees
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3006c0s1b1n0:1433822:1433924 [1] NCCL INFO comm 0x560132fbfc70 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 46000 commId 0xb4d6ac1c5ff8674d - Init COMPLETE
+nnel 03/0 : 3[3] -> 7[3] [send] via NET/Socket/1
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO Connected all trees
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+x3006c0s1b1n0:1433824:1433923 [3] NCCL INFO comm 0x55b27ec8ddb0 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId c7000 commId 0xb4d6ac1c5ff8674d - Init COMPLETE
+Throughput: 2077.350 images/s, Batch size: 16, Num of GPUs: 8, Total time: 7.113 s, Average batch time: 0.070 s, First batch time: 1.013 s
+start training
+Throughput: 2051.140 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.413 s, Average batch time: 0.063 s, First batch time: 0.235 s
+start training
+Throughput: 1943.507 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.763 s, Average batch time: 0.067 s, First batch time: 0.243 s
+start training
+Throughput: 1993.554 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.588 s, Average batch time: 0.065 s, First batch time: 0.232 s
+start training
+Throughput: 2028.513 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.495 s, Average batch time: 0.064 s, First batch time: 0.248 s
+start training
+Throughput: 2024.950 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.495 s, Average batch time: 0.064 s, First batch time: 0.237 s
+start training
+Throughput: 2005.687 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.560 s, Average batch time: 0.065 s, First batch time: 0.242 s
+start training
+Throughput: 1987.148 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.619 s, Average batch time: 0.066 s, First batch time: 0.243 s
+start training
+Throughput: 1965.668 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.680 s, Average batch time: 0.066 s, First batch time: 0.233 s
+start training
+Throughput: 2015.216 images/s, Batch size: 16, Num of GPUs: 8, Total time: 6.529 s, Average batch time: 0.065 s, First batch time: 0.240 s
+Total time: 66.67340636253357
+x3006c0s25b0n0:849781:849945 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+x3006c0s25b0n0:849779:849944 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+x3006c0s1b1n0:1433824:1433925 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+x3006c0s1b1n0:1433822:1433930 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+x3006c0s1b1n0:1433821:1433927 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+x3006c0s25b0n0:849778:849943 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+x3006c0s1b1n0:1433823:1433926 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+x3006c0s25b0n0:849780:849946 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+x3006c0s25b0n0:849779:852380 [0] NCCL INFO comm 0x55c9be142a30 rank 5 nranks 8 cudaDev 1 busId 46000 - Abort COMPLETE
+x3006c0s1b1n0:1433824:1436681 [0] NCCL INFO comm 0x55b27ec8ddb0 rank 3 nranks 8 cudaDev 3 busId c7000 - Abort COMPLETE
+x3006c0s1b1n0:1433822:1436687 [0] NCCL INFO comm 0x560132fbfc70 rank 1 nranks 8 cudaDev 1 busId 46000 - Abort COMPLETE
+x3006c0s25b0n0:849778:852382 [0] NCCL INFO comm 0x559220af5e30 rank 4 nranks 8 cudaDev 0 busId 7000 - Abort COMPLETE
+x3006c0s1b1n0:1433823:1436689 [0] NCCL INFO comm 0x55f3006feaf0 rank 2 nranks 8 cudaDev 2 busId 85000 - Abort COMPLETE
+x3006c0s25b0n0:849780:852381 [0] NCCL INFO comm 0x555e7b78acb0 rank 6 nranks 8 cudaDev 2 busId 85000 - Abort COMPLETE
+x3006c0s25b0n0:849781:852379 [0] NCCL INFO comm 0x56130a4bfa70 rank 7 nranks 8 cudaDev 3 busId c7000 - Abort COMPLETE
+x3006c0s1b1n0:1433821:1436691 [0] NCCL INFO comm 0x563ddda6acb0 rank 0 nranks 8 cudaDev 0 busId 7000 - Abort COMPLETE

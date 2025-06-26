@@ -3,7 +3,7 @@
 #PBS -S /bin/bash
 #PBS -W block=false
 #PBS -l select=2
-#PBS -q debug
+#PBS -q debug-scaling
 #PBS -l walltime=00:10:00
 #PBS -N miniGPT
 #PBS -A datascience
