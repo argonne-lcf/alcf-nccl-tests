@@ -72,7 +72,7 @@ mkdir -p $OUTPUT
 unset NCCL_NET NCCL_COLLNET_ENABLE NCCL_NET_GDR_LEVEL NCCL_CROSS_NIC
 export NCCL_DEBUG=TRACE
 echo "start time: `date`"
-mpiexec -np $TOTAL_NUMBER_OF_RANKS -ppn $RANKS_PER_NODE --cpu-bind depth -d 16 python ${EXE} ${WKLD_OPTS} >& $OUTPUT/without_aws.log
+#mpiexec -np $TOTAL_NUMBER_OF_RANKS -ppn $RANKS_PER_NODE --cpu-bind depth -d 16 python ${EXE} ${WKLD_OPTS} >& $OUTPUT/without_aws.log
 echo "end time: `date`"
 
 source ../aws_2025.01.15.sh
